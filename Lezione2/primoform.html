@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form </title>
+
+    <style>
+        form.form-example {
+            display: table;
+        }
+
+        div.form-example {
+            display: table-row;
+        }
+
+        label,
+        input {
+            display: table-cell;
+            margin-bottom: 10px;
+        }
+
+        label {
+            padding-right: 10px;
+        }
+
+        .center .center {
+  border: 5px solid;
+  display: flex;
+  justify-content: center;
+}
+
+    </style>
+</head>
+
+<body>
+
+<h2>Compila il modulo</h2>
+<form action="" method="get" class="form-example">
+    <div class="form-example">
+        <label for="name">Il tuo nome: </label>
+        <input type="text" name="name" id="name" required>
+    </div>
+    <div class="form-example">
+        <label for="name">La tua città: </label>
+        <input type="text" name="city" id="city">
+    </div>
+    <div class="form-example">
+        <label for="email">La tua mail: </label>
+        <input type="email" name="email" id="email" required>
+    </div>
+    <div class="form-example">
+        <input type="submit" value="Iscriviti">
+    </div>
+
+</form>
+</body>
+
+</html>
