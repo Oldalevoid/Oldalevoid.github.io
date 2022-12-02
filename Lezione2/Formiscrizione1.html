@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+      span.parole {
+      color: #FF4500;
+      }   
+      body {
+      background-color: #DAE0E6;
+      }   
+      .center {
+       margin: auto;
+          width: 50%;
+          background-color: #7c1b1b;
+          border: 2px solid #000000;
+          padding: 10px;
+          border-radius: 25px;
+      }
+      
+  </style>
+
+</head>
+<body>
+  <div class="center">
+    <img src="../Lezione2/Assets/città-di-amandola-XL.png" alt="Città di Amandola">
+    <h3>Iscriviti alla newsletter della <strong>Città di Amandola!</strong></h3>
+    <hr>
+    <h2>Inserisci i tuoi dati:</h2>
+    <form action="" method="get" class="form-example">
+        <div class="form-example">
+          <label for="name">Nome: </label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <br>
+        <div class="form-example">
+          <label for="cognome">Cognome: </label>
+          <input type="text" name="cognome" id="cognome" required>
+        </div>
+        <br>
+        <label for="start">Data di nascita:</label>
+
+<input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="2004-01-01" max="1900-12-31">
+<br>
+<br>
+       <form action="" method="get" class="form-example">
+        <div class="form-example">
+          <label for="Luogo di nascita">Da dove vieni?: </label>
+          <input type="text" name="Luogo di nascita" id="Luogo di nascita" required>
+        </div>
+      
+        <br>
+        <br>
+        <label for="story">Perché sei interessato alla nostrà comunità:</label> <br>
+        <textarea id="story" name="story"
+                  rows="5" cols="33">Es. Turismo, Lavoro, Hiking ecc..
+        </textarea>
+<br>
+        <div class="form-example">
+            <label for="email">Inserisci la tua mail: </label>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <br>
+          
+
+
+          
+          <hr>
+
+          <h2> Ora crea una nuova Password:</h2>
+          <div>
+            
+            <label for="Password">Nuova Password:</label>
+            <input type="password" id="Password" name="Password">
+        </div>
+        
+        <div>
+            <label for="pass"> Conferma la Password (Minimo 8 caratteri):</label>
+            <input type="password" id="pass" name="conferma password"
+                   minlength="8" required>
+        </div>
+<hr>
+
+
+    <hr>    
+    <div class="form-example">
+          <input type="submit" value="Subscribe!">
+        </div>
+      </form>
+    
+</body>
+</html>
