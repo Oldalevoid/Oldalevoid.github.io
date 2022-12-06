@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Il mio quotidiano online</title>
+
+    <style>
+        nav {
+            border-bottom: 1px solid black;
+        }
+
+        .crumbs ol {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .crumb {
+            display: inline-block;
+        }
+
+        .crumb a::after {
+            display: inline-block;
+            color: #000;
+            content: '*';
+            font-size: 80%;
+            font-weight: bold;
+            padding: 0 3px;
+        }
+
+        <!-- fine nav -->
+        details {
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            padding: .5em .5em 0;
+        }
+
+        summary {
+            font-weight: bold;
+            margin: -.5em -.5em 0;
+            padding: .5em;
+        }
+
+        details[open] {
+            padding: .5em;
+        }
+
+        details[open] summary {
+            border-bottom: 1px solid #aaa;
+            margin-bottom: .5em;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size:5vw;
+
+        }
+
+        article {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: medium;
+            color: rgb(0, 0, 0);
+            margin: 2px;
+            border: 1px solid #000;
+        }
+
+        aside {
+            width: 40%;
+            padding-left: .5rem;
+            margin-left: .5rem;
+            float: right;
+            box-shadow: inset 5px 0 5px -5px #29627e;
+            font-style: italic;
+            color: #29627e;
+        }
+
+        aside>p {
+            margin: .5rem;
+        }
+
+        p {
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        <! -- centrare il testo -->
+
+        .parent{
+            background:rgba(255, 255, 255, 0.967);
+            text-align:center;
+        }
+    
+
+    </style>
+
+</head>
+
+<body>
+    <!-- to do
+    - figure da inserire non in header
+    - testi da inserire 
+    - altre parti a piacere
+    - immagine di header
+    -->
+    
+     <header> <nav class="crumb">
+        <ul>
+            <li><a href="#">ITALIA</a></li>
+            <li><a href="#">MONDO</a></li>
+            <li><a href="#">POLITICA</a></li>
+        </ul>
+        <img src="./Assets/Amandola.jpg" alt="header"
+    </nav>
+    <h1>Il vento sibillino</h1>
+   
+    
+     </header>
+        
+    
+    
+    <section>
+        <header>
+            <h2>Ultimi articoli</h2>
+        </header>
+        <article>
+            <header>
+                <p>Alcolismo e pastorizia</p>
+            </header>
+            <details>
+                <summary>Quanto alcol consumi ammirando le montagne?</summary>
+            </details>
+            <figure>
+                <img src="./Assets/Amandola.jpg" alt="frutta">
+                <figcaption>Vista da piazz'alta</figcaption>
+            </figure>
+            <p>Non vergognarti del tuo passato, sei nato in mezzo al nulla e probabilmente ci morirai. Esaurisci la totalità della tua esistenza in un limbo di alcolismo e psicofarmaci. La tua formazione in questo posto ti ha portato a serie malattie mentali e fisiche ma non demordere, avrai sempre le montagne, le tue diana rosse e tanta, tanta, tanta disperazione! </p>
+            <time>2022-12-28</time>
+        </article>
+
+        <article>
+            <header>
+                <p>News dalla rete</p>
+            </header>
+            <details>
+                <summary>Lo sapevi?</summary>
+            </details>
+            <figure>
+                <img src="./Assets/1139493.png">
+                <figcaption>CPP</figcaption>
+            </figure>
+            <p> 
+                &egrave; dura commentare un finale di stagione come questo, la delusione &egrave; forte, anche se siamo consapevoli di aver dato tutto e di più.
+                Per ora mi limiter&ograve; a fare una "fredda" cronaca, più avanti, a mente fredda, si potr&agrave; fare un bilancio di quanto fatto durante questo campionato.
+                Iniziamo abbastanza contratti, forse troppo, la tensione si vede nei pochi passaggi riusciti, gli avversari vanno molto di più e infatti passano in vantaggio dopo pochi minuti per una indecisione del nostro portiere e raddoppiano poco dopo su una bella azione che ci trova scoperti un difesa.
+                Sembra che non ci sia storia, invece piano piano iniziamo a giocare più sciolti e abbiamo anche le nostre belle occasioni che non sfruttiamo a dovere.
+                Nel secondo tempo entriamo ancora piu convinti dei nostri mezzi e accorciamo con  Stefano Buratti dopo una mischia in area  su palla da fermo e abbiamo anche altre occasioni per pareggiare, come allo stesso tempo gli avversari hanno le loro chances per allungare, ma siamo tutti poco precisi.
+                I cambi cercano di scuotere un po&apos; l'ambiente ma rimaniamo nei minuti finali in dieci per l'espulsione di Danilo Forconi e poi anche di Paolo Tossici (chiusura di una lunga carriera? Chi può dirlo?) dalla panchina, dopo un alterco con l'arbitro che, a voler essere buoni, a volte ha sorvolato su episodi lampanti a nostro favore, ma questa non deve essere una scusante per una prestazione iniziata male ma finita in crescendo fino al rigore in pieno recupero per il ASD Mozzano City e che fissa il risultato sul 1-3 finale.
+                Ringraziamo il numerosissimo pubblico accorso, sia per noi che per il Mozzano City, nonostante l'accavallarsi di altri eventi, che si è comportato in modo civile e corretto.
+                Complimenti al Mozzano City per la promozione raggiunta e in bocca al lupo per la prossima stagione.
+                A presto per il bilancio stagionale  </p>
+            <time>2022-12-28</time>
+        </article>
+
+        <article>
+            <header> Questo articolo non ha contenuto, solo il volto di Cesare Marinangeli </header>
+            <details> S&iacute;, hai capito bene, proprio Cesare Marinangeli </details>
+        </article>
+        <footer>
+            Tutti i diritti riservati
+        </footer>
+    </section>
+    <aside>
+        <p>prof. Mario Rossi</p>
+    </aside>
+    <footer>
+        Seguici sui social...
+    </footer>
+
+</body>
+
+</html>
