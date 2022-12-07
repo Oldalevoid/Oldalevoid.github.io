@@ -1,0 +1,45 @@
+p, 
+ul {
+  border: 2px solid rebeccapurple;
+  padding: .5em;
+}
+
+.block,
+li {
+  border: 1px solid blue;
+  padding: .5em;
+}
+
+ul {
+  display:flex;
+  list-style:none; 
+}
+
+.block {
+  display:block;
+}      
+
+* {
+    box-sizing:border-box;
+  }
+  
+  .img-container {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+  
+  .boxer-big {
+    float: left;
+    width: 70%;
+    padding: 5px;
+   
+  }
+
+  .boxer-little {
+    float: left;
+    width: 30%;
+    padding: 5px;
+  }
+ 

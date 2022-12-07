@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Space+Grotesk&display=swap');
+
 
 /* General styles */
 
@@ -7,7 +8,7 @@ body {
   }
   
   html {
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 10px;
     background-color: #ccc;
   }
@@ -16,7 +17,7 @@ body {
     width: 35em;
     height: 22em;
     margin: 5em auto;
-    background-color: rgb(87, 12, 4);
+    background-color: rgb(158, 54, 42);
     border: 0.2em solid black;
     border-radius: 1.5em;
   }
@@ -67,5 +68,5 @@ body {
   
   .card article p {
     padding: 1em;
-    color: blue;
+    color: rgb(246, 246, 246);
   }
