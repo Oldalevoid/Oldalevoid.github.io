@@ -1,11 +1,11 @@
 .container {
-  background-color: grey;
-  width: 100%;
+  background-color :grey;
+  width:100%;
 }
 
 .element {
   float: left;
-  border:RED solid .1em;
+  border: RED solid .1em;
 }
 .clear-fix {
   clear: both;
