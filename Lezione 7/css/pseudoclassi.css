@@ -1,0 +1,90 @@
+/* General tags */
+hr {
+    border: 2px solid blue;
+    border-style: dotted;
+  }
+  
+  html {
+    font-size: larger;
+    color: blue;
+  }
+  
+  p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  body {
+    font-weight: 700;
+  }
+  
+  .first {
+    font-stretch: narrower;
+  }
+  
+  #miaprova {
+    border-color: blueviolet;
+  }
+  
+  /* :any-link */
+  .anylinks a:any-link {
+    border: 1px solid blue;
+    color: orange;
+  }
+  
+  /* WebKit browsers */
+  .anylinks a:-webkit-any-link {
+    border: 1px solid blue;
+    color: orange;
+  }
+  
+  /* :links */
+  .onlylinks a:link,
+  .onlylinks a:visited {
+    background-color: yellowgreen;
+    color: black;
+  }
+  
+  /* target */
+  .internalTarget p:target {
+    background-color: gold;
+  }
+  
+  /* Add a pseudo-element inside the target element */
+  .internalTarget p:target::before {
+    font: 70% sans-serif;
+    content: "►";
+    color: limegreen;
+    margin-right: 0.25em;
+  }
+  
+  /* Style italic elements within the target element */
+  .internalTarget p:target i {
+    color: red;
+  }
+  
+  /* Checked */
+  .checkedClass div,
+  .checkedClass select {
+    margin: 8px;
+  }
+  
+  /* Labels for checked inputs */
+  .checkedClass input:checked + label {
+    color: red;
+  }
+  
+  /* Radio element, when checked */
+  .checkedClass input[type="radio"]:checked {
+    box-shadow: 0 0 0 3px orange;
+  }
+  
+  /* Checkbox element, when checked */
+  .checkedClass input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px hotpink;
+  }
+  
+  /* Option elements, when selected */
+  .checkedClass option:checked {
+    box-shadow: 0 0 0 3px lime;
+    color: red;
+  }

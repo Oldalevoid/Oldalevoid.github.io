@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classi</title>
+    <link rel="stylesheet" href="./css/pseudoclassi.css">
+</head>
+
+<body>
+    <h2>Esempi sulle pseudo classi</h2>
+    <div class="anylinks">
+        <h3>AnyLinks</h3>
+        <a href="https://example.com">External link</a><br />
+        <a href="#">Internal target link</a><br />
+        <a>Placeholder link (won't get styled)</a>
+    </div>
+    <hr>
+    <div class="onlylinks">
+        <a href="http://www.google.it">Link visited</a><br />
+        <a href="http://www.google.it">Link visited 2</a><br />
+    </div>
+    <hr>
+    <div class="internalTarget">
+        <h3>Table of Contents</h3>
+        <ol>
+            <li><a href="#p1">Jump to the first paragraph!</a></li>
+            <li><a href="#p2">Jump to the second paragraph!</a></li>
+            <li>
+                <a href="#nowhere">
+                    This link goes nowhere, because the target doesn't exist.
+                </a>
+            </li>
+        </ol>
+
+        <h3>My Fun Article</h3>
+        <p id="p1">
+            You can target <i>this paragraph</i> using a URL fragment. Click on the link
+            above to try out!
+        </p>
+        <p id="p2">
+            This is <i>another paragraph</i>, also accessible from the links above. Isn't
+            that delightful?
+        </p>
+    </div>
+    <hr>
+    <div class="checkedClass">
+        <input type="radio" name="my-input" id="yes" value="yes" />
+        <label for="yes">Yes</label>
+        <input type="radio" name="my-input" id="no" value="no" />
+        <label for="no">No</label>
+    </div>
+
+    <div class="checkedClass">
+        <input type="checkbox" name="my-checkbox" id="opt-in" />
+        <label for="opt-in">Check me!</label>
+    </div>
+
+    <select name="my-select" id="fruit" class="checkedClass">
+        <option value="opt1">Apples</option>
+        <option value="opt2">Grapes</option>
+        <option value="opt3">Pears</option>
+    </select>
+
+    <hr>
+    <h3>Tutti gli altri</h3>
+    <a href="#">Link fuori</a><br />
+
+
+</body>
+
+</html>

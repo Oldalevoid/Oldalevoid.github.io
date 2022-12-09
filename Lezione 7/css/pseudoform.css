@@ -1,0 +1,53 @@
+
+
+    
+    
+form p {font:60 px;
+color: blue}
+
+
+label {
+    display: block;
+    margin: 1px;
+    padding: 1px;
+    font: 60px;;
+    color: blue;
+  }
+  
+  .field {
+    margin: 1px;
+    padding: 1px;
+  }
+  
+  input:invalid {
+    background-color: #f5f1f1;
+  }
+
+  input:invalid {
+    border: 5px solid #c00000;
+  }
+  
+  form:invalid {
+    border: 5px solid #fc1212;
+  }
+  
+  input:valid {
+    background-color: #ffffff;
+  }
+
+  input:valid {
+    border: 5px solid #007500;
+  }
+  
+  form:valid {
+    border: 5px solid #007500;
+  }
+  
+  input:required {
+    border-color: #f9f7f7;
+    border-width: 3px;
+  }
+  
+  input:required:invalid {
+    border-color: #c00000;
+  }

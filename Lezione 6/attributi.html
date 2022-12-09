@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+a {
+    color: blue;
+  }
+  
+  /* Internal links, beginning with "#" */
+  a[href^="#"] {
+    background-color: gold;
+  }
+  
+  /* Links with "titolo" anywhere in the URL */
+  a[href*="Titolo"] {
+    background-color: rgb(11, 226, 40);
+  }
+  
+  /* Links with "Alessandro" anywhere in the URL,
+     regardless of capitalization */
+  a[href*="Alessandro" i] {
+    background-color: rgb(199, 242, 6);
+    color:black;
+    cursor: not-allowed;
+  }
+  
+  /* Links with "cAsE" anywhere in the URL,
+  with matching capitalization */
+  a[href*="cAsE" s] {
+    color: pink;
+  }
+  
+  /* Links that end in ".org" */
+  a[href$=".org"] {
+    color: red;
+  }
+  
+  /* Links that start with "https" and end in ".org" */
+  a[href^="https"][href$=".org"] {
+    color: green;
+  }
+  
+
+
+</style>
+</head>
+<body>
+    <ul>
+        <li><a href="Titolo">Titolo</a></li>
+        <li><a href="http://Alessandro.com">Alessandro Oldani</a></li>
+        <li><a href="#InSensitive">#Insensitive internal link</a></li>
+        <li><a href="http://example.org">Example Titolo link</a></li>
+        <li><a href="https://example.org">Example https org link</a></li>
+      </ul>
+    
+</body>
+</html>

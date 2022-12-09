@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with pseudo class</title>
+    <link rel="stylesheet" a href="./css/pseudoform.css">
+</head>
+
+<body>
+    <form>
+        <p>Iscriviti alla nostra newsletter</p>
+        <label>Nome completo: <input name="firstName" type="text" minlength="2" maxlength="25"></label>
+        <label>E-mail: <input name="mail" type="email"></label>
+        <!--
+            TO DO
+           campi  password + conferma password
+        controlli css
+        - invalid CERCHI DI ROSSO 
+        - valid cerchio in verde
+        - focus background giallo
+        - bottone on hover effetto ombra
+        - font blue per tutto
+        -->
+
+        <label for="password">Scegli la password (min. 8 caratteri):</label>
+        <input type="password" id="password" name="password" minlength="8">
+        <div>
+            <label for="passwordConfirm"> Conferma la password :</label>
+            <input type="passwordCfr" id="passwordCfr" name="passwordCfr" minlength="8" >
+        </div>
+        <input name="scopri" type="button" value="Scopri di più">
+        <input name="scopri" type="button" value="Invia">
+    </form>
+
+</body>
+
+</html>

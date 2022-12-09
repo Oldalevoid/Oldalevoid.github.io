@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    li {
+    list-style-type: disc;
+  }
+  
+  li li {
+    list-style-type: circle;
+  }
+
+.uno #due 
+{
+    background-color: blueviolet;
+} 
+
+.uno
+{
+    background-color: yellow;
+} 
+
+.tre
+{
+    background-color: grey;
+} 
+
+.uno .tre
+{
+    background-color: pink;
+} 
+</style>
+<body>
+    <ul>
+        <li>
+          <div>Item 1</div>
+          <ul>
+            <li>Subitem A</li>
+            <li>Subitem B</li>
+          </ul>
+        </li>
+        <li>
+          <div>Item 2</div>
+          <ul>
+            <li>Subitem A</li>
+            <li>Subitem B</li>
+          </ul>
+        </li>
+      </ul>
+
+      <span class="tre">tre fuori tre</span>
+      
+      <div class="uno"> 
+        testo testo
+        <span id="due">dentro testo testo testo</span>
+        <span class="tre">tre tre</span>
+      </div>
+
+      <div class="uno">testo2 testo2 testo</div>
+
+    
+</body>
+</html>
