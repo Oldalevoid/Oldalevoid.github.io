@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 10px;
+        width: 80em;
+        margin: auto;
+        
+    }
+
+    /*tipografia*/
+    h1 {
+        font-size: 4em;
+        text-align: center;
+    }
+    h2 { 
+        font-size: 4em;
+        text-decoration: dotted;
+        font-weight: lighter;
+        font-style: oblique;
+    }
+
+    p,
+    li {
+  font-size: 1.7em;
+  line-height: 2;
+  }
+
+  .divp{
+    font-size: 1.7em;
+    font-style: oblique;
+    font-family: fantasy;
+  }
+
+  /*specifiche label */
+  label {
+  display: block;
+  margin-top: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-top: 2em;
+  font-size: 1.5em;
+  font-style:oblique;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+}
+.formclass {
+  margin: left;
+  width: 70%;
+  padding: 10px;
+}
+
+    /*specifiche header*/
+    header {
+  background-color: yellowgreen;
+  height: 15em;
+  padding: 2em; }
+
+  footer {
+  background-color: aqua;
+  height: 5em;
+  padding: 2em; }
+
+  img {
+    margin: 1.2em 2em;
+    width: 500px;
+    float: right; }
+
+    input:valid {
+  display: block;
+  background-color: whitesmoke;
+  border: none;
+  outline: 2px solid deepskyblue;
+  border-radius: 5px;
+  accent-color: gold;
+  position: auto;
+}
+
+input:invalid {
+  display: block;
+  background-color: red;
+}
+
+/*box*/
+.boxed {
+  background-color: rgb(15, 123, 13);
+  width: 700;
+  border: 4px rgba(17, 167, 57, 0.631);
+  padding: 50px;
+  margin: 20px;
+  border-radius: 2cm;
+  box-shadow: 10px 10px 5px;
+  background-image:url("confederate.jpg");
+}
+.boxed p {
+    font-size: 4em;
+    font-family: monospace;
+    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+    color:black;
+
+}
+
+
+</style>
+<body>
+    <header>
+        <h1> Ciao a tutti, sono Matteo Conti! E questo è l'emporio dello spaccio! <h1>
+    </header>
+<main> 
+    <h2> Chi sono? </h2>
+    <img src="https://media.npr.org/assets/img/2022/09/13/ap22238060188958_custom-ef028c9cb2a62edb0765dfee2338806b5ea81722-s1100-c50.jpg" alt="vacanze in texas">
+
+    <p> Bello il Texas! Quello in foto ero io, quanto ero magro vent&apos; anni fa. Oggi uscito dal carcere sono rinato.
+        Sono una persona nuova, ho abbandonato lo spaccio di erba e sono direttamente passato ad oppiacei, benzodiazepine e anabolizzanti.
+        Iscriverti alla mia newsletter ti permetter&aacute; di ricevere costanti aggiornamenti riguardo alle mie merci. 
+        Sotto elencher&oacute; quelle pi&uacute; richieste da voi, brutti luridi figli di puttana!
+    </p>
+    <div class="divp">
+    <p> Trenbolone Enantato, Metaxastone, GH, Testosterone, Dianabol, Eroina tagliata con il tavor, Clenbuterolo, Minestrone, Fandellone
+
+    </p>
+    </div>
+
+
+    <div class="boxed"> 
+
+    <form class="formclass">
+        <p> Cosa aspetti? Iscriviti alla mia newsletter, cazzo!</p>
+        <label>Nome completo: 
+            <input name="firstName" type="text"></label>
+            <label>E-mail: <input name="mail" type="email"></label>
+            <label for="password">Scegli la password (Non vale il nome di tua madre defunta):</label>
+            <input type="password" id="password" name="password"  required="required">
+            <label for="passwordConfirm"> Conferma la password :</label>
+            <input type="password" id="passwordCfr" name="passwordCfr" minlength="8"  required="required">
+            <input name="scopri" type="button" value="Spingi questa merda PHIL!">
+        </form>
+        
+    </div>
+
+    <footer>
+        <p>Per le scagliette di meth visita il nostro sito dedicato: <a href=""> </a>
+    </footer>
+    
+
+</main>
+    
+</body>
+</html>

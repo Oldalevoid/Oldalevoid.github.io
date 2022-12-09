@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Debugging CSS</title>
+    <link rel="stylesheet" href="css/esercizio.css">
+    <!-- non duplicate stili, tag -->
+</head>
+
+<style>
+    /* General styles */
+
+body {
+  font-family: "Helvetica neue", Arial, "sans serif";
+  font-size: 10px;
+  width: 80em;
+  margin: 0 auto;
+}
+
+/* Typography */
+h1 {
+  font-size: 4em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.2em;
+}
+
+p,
+li {
+  font-size: 1.7em;
+  line-height: 2;
+}
+
+img {
+  margin: 1.2em 2em;
+  width: 500px;
+  float: right;
+}
+
+label {
+  display: block;
+  margin-top: 2em;
+  margin-left: 2em;
+  padding-top: 2em;
+  font-size: 1.5em;
+}
+
+input:valid {
+  display: block;
+  background-color: whitesmoke;
+  border: none;
+  outline: 2px solid deepskyblue;
+  border-radius: 5px;
+  accent-color: gold;
+  position: relative;
+}
+
+input:invalid {
+  display: block;
+  background-color: red;
+}
+
+/*+++ more specific section styles +++*/
+/* header and footer */
+header {
+  background-color: yellowgreen;
+  height: 10em;
+  padding: 2em;
+}
+
+footer {
+  background-color: aqua;
+  height: 5em;
+  padding: 2em;
+}
+
+/* main content */
+main {
+  padding: 2em;
+}
+
+/* formclass */
+.formclass {
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+}
+</style>
+
+<body>
+    <header>
+        <!-- colore diverso dal footer-->
+        <h1>Benvenuto sul nostro sito</h1>
+    </header>
+    <main>
+        <h2>Chi siamo</h2>
+        <!--
+        TODO 
+        - link interni target (almeno 2: contattacci, dove siamo)
+        - form completo coi colori focus e quando sbagli
+        - first letter in maiuscolo
+      -->
+        <!-- cambiare immagine una immagina e vostra scelta-->
+        <img src="https://static2-viaggi.corriereobjects.it/wp-content/uploads/2021/01/iata-travel-pass-passaporto-sanitario-per-volare-in-aereo-1080x720.jpg?v=419953"
+            alt="aereo">
+
+        <!-- Modificare il testo-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
+            dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.
+            Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+
+        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales
+            ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In
+            scelerisque sem at dolor.</p>
+
+        <form class="formclass">
+            <p>Iscriviti alla nostra newsletter</p>
+            <label>Nome completo: 
+            <input name="firstName" type="text"></label>
+            <label>E-mail: <input name="mail" type="email"></label>
+            <label for="password">Scegli la password (min. 8 caratteri):</label>
+            <input type="password" id="password" name="password"  required="required">
+            <label for="passwordConfirm"> Conferma la password :</label>
+            <input type="password" id="passwordCfr" name="passwordCfr" minlength="8"  required="required">
+            <input name="scopri" type="button" value="Scopri">
+        </form>
+    </main>
+
+    <footer>
+        <!-- colore diverso dal header ma alto la metà-->
+        <p>Per le scagliette di meth visita il vostro sito dedicato: <a href="www.germanomosconi.it"> </a>  </p>
+    </footer>
+</body>
+
+</html>
