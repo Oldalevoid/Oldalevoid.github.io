@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floated</title>
+</head>
+<style>
+    /* 1 STEP : box sizing and lobotimized owl */
+
+    :root {
+        box-sizing: border-box;
+    } 
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: inherit;
+    }
+
+    body *+* {
+        margin-top: 1.5em;
+    }
+
+    /* 2 STEP : generic styling rules */
+
+    body {
+        background: rgb(170, 169, 186);
+        font-family: Arial, sans-serif;
+        
+    }
+
+    header {
+        margin-bottom: 1.5em;
+        height:auto;
+    }
+
+    #headerback {width:100%; height:100px; background:url(./Assets/Confederates.svg.png);
+    }
+    #mainheader {font-family: fantasy;font-weight: 600; color: black; text-align: justify; height: fit-content; text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+ position:absolute; top: -2px; }
+
+
+
+    header,
+    footer {
+        background-color: #9e0202;
+        padding: 1.5em;
+        color: #fff;
+    }
+
+    main {
+        background: #fff;
+        padding: 0 1.5em 1.5em 1.5em;
+    }
+
+    header,
+    footer,
+    main {
+        border-radius: 5px;
+    }
+
+    article {
+        background-color: #dedede;
+        box-shadow: 10px 10px 5px #5762ba;
+        padding: 1.5em;
+        background-image: -webkit-linear-gradient(top right, #9ca5ba 0%, #1e4568 100%);
+
+    }
+
+    article h4 {
+        margin: 0;
+    }
+
+    /* 3 STEP : applying float section */
+
+    /* double container pattern */
+    .container {
+        max-width: 90%;
+        margin: 0 auto;
+    } 
+
+    article {
+        float: left;
+        width: 50%; 
+    }
+
+    /* 4 STEP : fixing floating section */
+
+
+    section::after {
+        display: block;
+        content: " ";
+        clear: both;
+    }
+    
+
+    /* 5 STEP : article margins */
+
+    article {
+        margin: 0 1.5em 1.5em 0;
+        width: calc(50% - 1.5em);
+    }
+
+    
+
+    /*fixes the margins of the edge children*/
+   section {
+        margin-right: -1.5em;
+        margin-bottom: -1.5em;
+    } 
+
+    /* 6 STEP : Fixes collapsing margin of section title */
+
+    section::before {
+        display: table;
+        content: " ";
+    }
+    
+
+    /* 7 STEP : grid row clearfix */
+
+    .articles> :nth-child(2n+1) {
+        clear: left;
+    }
+    
+
+    /* 8 STEP : grid element styling */
+
+    .articles img {
+        float: left;
+        margin: 0 1.5em 1.5em 0;
+        height:150px;
+        weight:150px; 
+    }
+
+    .articles .article-body {
+        overflow: auto;
+    }
+    
+    /** commento **/
+</style>
+
+<body>
+    <div class="container">
+        <header id="headerback">
+            <h1 id="mainheader">Southern depressed Powerlifting</h1>
+            
+        </header>
+        <main>
+            <section>
+                <h2>News</h2>
+                <div class="articles">
+                    <article>
+                        <img src="Assets/Ciao.png" alt="img1" class="media-image">
+                        <div class="article-body">
+                            <a href="index.html" h4>Trenbolone enantato</h4> </a>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://via.placeholder.com/150" alt="img1" class="media-image">
+                        <div class="article-body">
+                            <h4>Lorem ipsum</h4>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://via.placeholder.com/150" alt="img1" class="media-image">
+                        <div class="article-body">
+                            <h4>Lorem ipsum</h4>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://via.placeholder.com/150" alt="img1" class="media-image">
+                        <div class="article-body">
+                            <h4>Lorem ipsum</h4>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://via.placeholder.com/150" alt="img1" class="media-image">
+                        <div class="article-body">
+                            <h4>Lorem ipsum</h4>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://via.placeholder.com/150" alt="img1" class="media-image">
+                        <div class="article-body">
+                            <h4>Lorem ipsum</h4>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://via.placeholder.com/150" alt="img1" class="media-image">
+                        <div class="article-body">
+                            <h4>Lorem ipsum</h4>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://via.placeholder.com/150" alt="img1" class="media-image">
+                        <div class="article-body">
+                            <h4>Lorem ipsum</h4>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer>
+            Footer element..
+        </footer>
+    </div>
+</body>
+
+</html>

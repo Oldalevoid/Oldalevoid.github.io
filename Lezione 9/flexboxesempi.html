@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box esempi</title>
+</head>
+<style>
+    .flexdirectionex .content {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #c3c3c3;
+        display: flex;
+    }
+
+    .flexdirectionex .box {
+        width: 50px;
+        height: 50px;
+    }
+
+    .flexdirectionex #col-rev {
+        flex-direction: column-reverse;
+    }
+
+    .flexdirectionex #row-rev {
+        flex-direction: row-reverse;
+    }
+
+    .flexdirectionex .red {
+        background-color: red;
+    }
+
+    .flexdirectionex .lightblue {
+        background-color: lightblue;
+    }
+
+    .flexdirectionex .yellow {
+        background-color: yellow;
+    }
+
+    /** flex wrap part */
+    /* Common Styles */
+    .flexwrapex .content,
+    .flexwrapex .content1,
+    .flexwrapex .content2 {
+        color: #fff;
+        font: 100 24px/100px sans-serif;
+        height: 150px;
+        width: 897px;
+        text-align: center;
+    }
+
+    .flexwrapex .content div,
+    .flexwrapex .content1 div,
+    .flexwrapex .content2 div {
+        height: 50%;
+        width: 300px;
+    }
+
+    .flexwrapex .red {
+        background: orangered;
+    }
+
+    .flexwrapex .green {
+        background: yellowgreen;
+    }
+
+    .flexwrapex .blue {
+        background: steelblue;
+    }
+
+    /* Flexbox Styles */
+    .flexwrapex .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flexwrapex .content1 {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .flexwrapex .content2 {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+</style>
+
+<body>
+    <section class="flexdirectionex">
+        <h4>This is a Column-Reverse</h4>
+        <div id="col-rev" class="content">
+            <div class="box red">A</div>
+            <div class="box lightblue">B</div>
+            <div class="box yellow">C</div>
+        </div>
+        <h4>This is a Row-Reverse</h4>
+        <div id="row-rev" class="content">
+            <div class="box red">A</div>
+            <div class="box lightblue">B</div>
+            <div class="box yellow">C</div>
+        </div>
+    </section>
+
+    <section class="flexwrapex">
+        <h4>This is an example for flex-wrap:wrap</h4>
+        <div class="content">
+            <div class="red">1</div>
+            <div class="green">2</div>
+            <div class="blue">3</div>
+        </div>
+        <h4>This is an example for flex-wrap:nowrap</h4>
+        <div class="content1">
+            <div class="red">1</div>
+            <div class="green">2</div>
+            <div class="blue">3</div>
+        </div>
+        <h4>This is an example for flex-wrap:wrap-reverse</h4>
+        <div class="content2">
+            <div class="red">1</div>
+            <div class="green">2</div>
+            <div class="blue">3</div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>

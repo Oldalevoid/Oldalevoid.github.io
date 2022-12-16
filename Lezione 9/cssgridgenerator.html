@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+    display: grid;
+    grid-template-rows: 150px auto 150px;
+    grid-template-columns: 25% 75%;
+    grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+    /*attraverso grid-template-areas è possibile definire la struttura*/
+}
+.header{
+    grid-area: header;
+    background-color: #FF9379;
+}
+.articoli{
+    grid-area: content;
+    background-color: #9EA4FF;
+}
+aside{
+    grid-area: sidebar;
+    background-color: #7AE464;
+}
+.footer{
+    grid-area: footer;
+    background-color: #FFFB7C;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <p>Questo &egrave; l'header del mio nuovo layout</p>
+        </header>
+        <section class="articoli">
+            <article>
+                <header>
+                    <h2>Inseriamo un articolo</h2>
+                </header>
+                <div class="contenuto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic a quia quo voluptates voluptatem illo voluptas sed. Aliquam corporis, sint quia nam consequuntur ullam id repudiandae possimus repellat neque eligendi.</p>
+                </div>
+                <footer>
+                    <small>Piccole informazioni</small>
+                </footer>
+            </article>
+    
+            <article>
+                <header>
+                    <h2>Inseriamo un articolo</h2>
+                </header>
+                <div class="contenuto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic a quia quo voluptates voluptatem illo voluptas sed. Aliquam corporis, sint quia nam consequuntur ullam id repudiandae possimus repellat neque eligendi.</p>
+                </div>
+                <footer>
+                    <small>Piccole informazioni</small>
+                </footer>
+            </article>
+    
+            <article>
+                <header>
+                    <h2>Inseriamo un articolo</h2>
+                </header>
+                <div class="contenuto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic a quia quo voluptates voluptatem illo voluptas sed. Aliquam corporis, sint quia nam consequuntur ullam id repudiandae possimus repellat neque eligendi.</p>
+                </div>
+                <footer>
+                    <small>Piccole informazioni</small>
+                </footer>
+            </article>
+        </section>
+        <aside>
+            <div class="widget">Area 1</div>
+            <div class="widget">Area 2</div>
+            <div class="widget">Area 3</div>
+        </aside>
+        <footer class="footer">
+            <small>chiudiamo il tutto</small>
+        </footer>
+    </div>
+    
+</body>
+</html>

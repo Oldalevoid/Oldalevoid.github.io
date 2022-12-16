@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+</head>
+<style>
+    #flex-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #flex-container>.flex-item {
+        flex: auto;
+    }
+
+    #flex-container>.raw-item {
+        width: 5rem;
+    }
+
+    #content {
+        display: flex;
+
+        justify-content: space-around;
+        flex-flow: row wrap;
+        align-items: stretch;
+    }
+
+    .box {
+        flex-grow: 1;
+        border: 3px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .box1 {
+        flex-grow: 3;
+        border: 4px dotted rgba(0, 0, 0, 0.2);
+    }
+
+    /** shrink **/
+    #contentshrink {
+        display: flex;
+        width: 500px;
+    }
+
+    #contentshrink div {
+        flex-basis: 120px;
+        border: 3px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .boxshrink {
+        flex-shrink: 1;
+    }
+
+    .box1shrink {
+        flex-shrink: 3;
+    }
+
+    /** basis **/
+    .containerflex {
+        font-family: arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flex {
+        background: #6ab6d8;
+        padding: 10px;
+        margin-bottom: 50px;
+        border: 3px solid #2e86bb;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        position: relative;
+    }
+
+    .flex::after {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 100%;
+        margin-top: 10px;
+        width: 100%;
+        color: #333;
+        font-size: 12px;
+    }
+
+    .flex1 {
+        flex-basis: auto;
+    }
+
+    .flex1::after {
+        content: "auto";
+    }
+
+    .flex2 {
+        flex-basis: max-content;
+    }
+
+    .flex2::after {
+        content: "max-content";
+    }
+
+    .flex3 {
+        flex-basis: min-content;
+    }
+
+    .flex3::after {
+        content: "min-content";
+    }
+
+    .flex4 {
+        flex-basis: fit-content;
+    }
+
+    .flex4::after {
+        content: "fit-content";
+    }
+
+    .flex5 {
+        flex-basis: content;
+    }
+
+    .flex5::after {
+        content: "content";
+    }
+</style>
+
+<body>
+    <div id="flex-container">
+        <div class="flex-item" id="flex">Flex box (click to toggle raw box)</div>
+        <div class="raw-item" id="raw">Raw box</div>
+    </div>
+
+    <h4>This is a Flex-Grow</h4>
+    <h5>A,B,C and F are flex-grow:1 . D and E are flex-grow:2 .</h5>
+    <div id="content">
+        <div class="box" style="background-color:red;">A</div>
+        <div class="box" style="background-color:lightblue;">B</div>
+        <div class="box" style="background-color:yellow;">C</div>
+        <div class="box1" style="background-color:brown;">D</div>
+        <div class="box1" style="background-color:lightgreen;">E</div>
+        <div class="box" style="background-color:brown;">F</div>
+    </div>
+
+    <h4>This is a Flex-Shrink</h4>
+    <p>The width of content is 500px; the flex-basis of the flex items is 120px.</p>
+    <p>A, B, C have flex-shrink:1 set. D and E have flex-shrink:2 set</p>
+    <p>The width of D and E is less than the others.</p>
+    <div id="contentshrink">
+        <div class="boxshrink" style="background-color:red;">A</div>
+        <div class="boxshrink" style="background-color:lightblue;">B</div>
+        <div class="boxshrink" style="background-color:yellow;">C</div>
+        <div class="box1shrink" style="background-color:brown;">D</div>
+        <div class="box1shrink" style="background-color:lightgreen;">E</div>
+    </div>
+
+    <h4>This is a Flex-bases</h4>
+
+    <ul class="containerflex">
+        <li class="flex flex1">1: flex-basis test</li>
+        <li class="flex flex2">2: flex-basis test</li>
+        <li class="flex flex3">3: flex-basis test</li>
+        <li class="flex flex4">4: flex-basis test</li>
+        <li class="flex flex5">5: flex-basis test</li>
+      </ul>
+      
+      <ul class="containerflex">
+        <li class="flex flex6">6: flex-basis test</li>
+      </ul>
+      
+</body>
+
+</html>
