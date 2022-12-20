@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito responsive</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<style>
+    :root {
+  box-sizing: border-box;
+  --black-color: black;
+  --back_color_for_all: white;
+  --footer-bk-color: #c6d5e8;
+  --black_color_for_li: black;
+  /** dichiarare i colori qui **/
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  margin: 0.5em;
+}
+
+body * + * {
+  margin-top: 1.5em;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 700;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/** section **/
+
+section::after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+
+section {
+  margin-right: -1.5em;
+  margin-bottom: -1.5em;
+}
+
+section::before {
+  display: table;
+  content: " ";
+}
+
+/** articles **/
+
+article {
+  float: left;
+  width: calc(50% - 1.5em);
+  border: 1px solid var(--black-color);
+}
+
+article h4 {
+  margin: 0;
+}
+
+.articles > :nth-child(2n + 1) {
+  clear: left;
+}
+
+.articles img {
+  float: left;
+  margin-right: 10px;
+  width: 150px;
+  height: 150px;
+  padding: 0;
+}
+
+.articles .article-body {
+  overflow: auto;
+  text-align: justify;
+}
+/** header **/
+
+header {
+  background-color: var(--back_color_for_all);
+}
+
+.header-nav {
+  display: flex;
+  padding: 0.2em;
+  list-style-type: none;
+  background-color: var(--black-color);
+  border-radius: 15px;
+  max-height: 60px;
+}
+
+.header-nav > li {
+  margin-top: 0;
+}
+
+.header-nav > li > a {
+  display: block;
+  padding: 0.5em 1em;
+  background-color: var(--back_color_for_all);
+  color: var(--black-color);
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.header-nav > li:nth-child(1n + 2) {
+  margin-left: 0.5em;
+}
+
+.header-nav > li.nav-right {
+  margin-left: auto;
+}
+
+/** footer **/
+footer {
+  background-color: var(--black_color_for_li);
+  color: var(--footer-bk-color);
+}
+
+.footer-nav {
+  display: flex;
+  float: left; /* per far allineare privacy e social*/
+  padding: 0.5em;
+  list-style-type: none;
+}
+
+.footer-nav > li {
+  margin-top: 0; /* per allineare li */
+}
+
+.footer-nav > li > a {
+  text-decoration: none;
+}
+
+/* social */
+
+.social {
+  display: flex;
+  line-height: 5em;
+  margin-left: 45em;
+}
+
+.social > a {
+  margin-top: 0;
+}
+
+/** banner **/
+
+.blackc {
+  color: var(--black_color_for_li);
+}
+
+.containerimg {
+  display: inline-block;
+}
+
+.media-ban {
+  filter: drop-shadow(2px 10px 4px black);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  animation: ban1 3s ease 0s infinite normal forwards;
+}
+
+@keyframes ban1 {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+
+/** griglia centrale **/
+
+.centergrid {
+  background-color: var(--back_color_for_all);
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  border: 1px solid var(--black-color);
+  text-align: justify;
+  align-items: self-end;
+}
+
+.immagineprova {
+  float: left;
+  margin-right: 15px;
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+}
+
+.first {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.second {
+  grid-area: 1 / 2 / 2 / 3;
+  border-left: 1px solid var(--black-color);
+  margin-right: 10px;
+  border-right: 1px solid var(--black-color);
+  margin-left: 10px;
+}
+.third {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.centergrid:nth-child(n) {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+aside {
+  float: left;
+}
+
+.vl {
+  border-left: 1px solid rgb(65, 64, 64);
+  color: rgb(59, 56, 56);
+  height: 270px;
+  position: absolute;
+  left: 50%;
+  margin-left: -9%;
+}
+
+.vl2 {
+  border-left: 1px solid rgb(65, 64, 64);
+  height: 270px;
+  position: absolute;
+  left: 50%;
+  margin-left: 9.5%;
+}
+
+</style>
+
+<body>
+    <main>
+        <header>
+            <h1>Corriere del developer</h1>
+            <nav>
+                <ul class="header-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/features">Chi siamo</a></li>
+                    <li><a href="/pricing">Dove siamo</a></li>
+                    <li class="nav-right">
+                        <a href="/about">Contatti</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="banner">
+                <img src="assets/banner.png" alt="Il corriere dei web developer" class="media-ban" />
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="articles">
+                    <article>
+                        <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/21_Angular-512.png"
+                            alt="img1" class="media-image" />
+                        <div class="article-body">
+                            <h4>Angular 16 per migliorare il rendering lato server</h4>
+                            <p>
+                                Provvisoriamente previsto per maggio 2023, Angular 16
+                                esplorerà l'idratazione e i miglioramenti dell'usabilità del
+                                rendering lato server, con un primo passo costituito
+                                dall'idratazione non distruttiva. Questa tecnica consentirebbe
+                                il riutilizzo del DOM lato server e, anziché eseguire
+                                nuovamente il rendering, collegherebbe solo listener di eventi
+                                e creerebbe strutture di dati necessarie al runtime di
+                                Angular.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/microsoft-dot-net-icon.png"
+                            alt="img1" class="media-image" />
+                        <div class="article-body">
+                            <h4>.NET Core 3.1 di Microsoft si avvicina alla fine</h4>
+                            <p>
+                                .NET Core 3.1 di Microsoft, una versione del framework di
+                                sviluppo software multipiattaforma open source di Microsoft
+                                pubblicato a dicembre 2019, non sarà più supportato a partire
+                                dal 13 dicembre 2022. .NET Core 3.1 raggiunge lo stato di fine
+                                supporto quel giorno, con Microsoft che interrompe la
+                                manutenzione degli aggiornamenti e del supporto tecnico, ha
+                                affermato la società.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="articles">
+                    <article>
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" alt="img1"
+                            class="media-image" />
+                        <div class="article-body">
+                            <h4>TypeScript compie 10 anni</h4>
+                            <p>
+                                Dopo essere stato inizialmente accolto con scetticismo, il
+                                linguaggio di programmazione TypeScript di Microsoft, che ha
+                                portato i tipi statici nello sviluppo di JavaScript, ha
+                                resistito alla prova del tempo, ha scritto un funzionario
+                                Microsoft lo scorso fine settimana.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img src="https://www.marketplace.org/wp-content/uploads/2020/08/Windows_Internet_Explorer_Logo.png?fit=602%2C602"
+                            alt="img1" class="media-image" />
+                        <div class="article-body">
+                            <h4>Internet Explorer raggiunge la fine della linea</h4>
+                            <p>
+                                Il browser Web Internet Explorer legacy di Microsoft, che ha
+                                navigato su Internet per quasi 27 anni , è stato ufficialmente
+                                ritirato dal 15 giugno. La versione 11 del browser non è più
+                                supportata, ha annunciato Microsoft. Nei prossimi mesi,
+                                l'apertura di Internet Explorer reindirizzerà progressivamente
+                                gli utenti al nuovo browser Microsoft Edge.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- mettere almeno due pubblicità quadrate-->
+
+            <div class="conteinerimg">
+                <div class="banner1">
+                    <a href="http://www.financesolutions.it/">
+                        <img src="https://via.placeholder.com/970x90" width="970" height="90" alt="img1"
+                            class="media-ban" /></a>
+                </div>
+            </div>
+            <aside class="centergrid">
+                <div class="first">
+                    <a href="sito_responsive_singolo_articolo.html">
+                        <h3>
+                            Ue, scontro sui migranti. Meloni: "Serve un segnale politico"
+                        </h3>
+                    </a>
+                    <img class="immagineprova" src="https://via.placeholder.com/100" alt="stranieri" />
+                    <p>
+                        A Giorgia Meloni non hanno tremato le gambe al suo debutto al
+                        Consiglio dell'Unione europea e il suo intervento è stato fermo e
+                        deciso. Il presidente del Consiglio ha spaziato dai migranti
+                        all'energia, sottolineando il ruolo fondamentale che giocano nello
+                        scacchiere europeo i Paesi del sud. Il tema dei migranti resta in
+                        agenda al termine di questo Consiglio, come ha dichiarato il
+                        presidente del Consiglio europeo, Charles Michel.
+                    </p>
+                </div>
+
+                <div class="second">
+                    <a href="sito_responsive_singolo_articolo.html">
+                        <h3>
+                            Covid, svolta per i positivi: liberi anche con la febbre (e il
+                            tampone non servirà)
+                        </h3>
+                    </a>
+                    <img class="immagineprova" src="https://via.placeholder.com/100" alt="vaccino" />
+                    <p>
+                        Niente più limitazioni. Il Covid non fa più paura. Si chiude (si
+                        spera definitivamente) l'era del green pass e dei controlli.
+                        L'isolamento dei positivi, che oggi dura cinque giorni, si
+                        concluderà senza bisogno di tampone finale. A ufficializzare la
+                        decisione, già annunciata più volte dal ministro della Salute
+                        Orazio Schillaci, è un emendamento contenuto nel decreto Rave
+                        approvato dal Senato.
+                    </p>
+                </div>
+                <div class="third">
+                    <a href="sito_responsive_singolo_articolo.html">
+                        <h3>
+                            Clamoroso Marocco, reclamo ufficiale contro la Francia! “Theo su
+                            Boufal era da VAR!”
+                        </h3>
+                    </a>
+                    <img class="immagineprova" src="https://via.placeholder.com/120" alt="coppa" />
+                    <p>
+                        Dopo una calvacata straordinaria, il cammino del Marocco al
+                        Mondiale di Qatar si è fermato in semifinale contro la Francia.
+                        Sconfitta che i Leoni dell'Atlante faticano a digerire con due
+                        episodi nella gara, terminata per 2-0 a favore dei ragazzi di
+                        Deschamps, che la formazione di Regragui non ha gradito. Dito
+                        puntato contro la direzione di gara del messicano Cesar Ramos.
+                    </p>
+                </div>
+
+            </aside>
+
+            <section>
+                <div class="articles">
+                    <article>
+                        <img src="https://via.placeholder.com/200" alt="banner" class="media-image" />
+                        <div class="article-body">
+                            <h4>Mozilla svela la visione per l'evoluzione del web</h4>
+                            <p>
+                                Predicando il mantra che "il web è per tutti", Mozilla ha pubblicato una visione per
+                                l'evoluzione del web che sottolinea l'apertura e la sicurezza, con l'azienda che mira a
+                                colmare le carenze in aree tra cui privacy e complessità.
+
+                                Il documento di visione copre ciò che Mozilla vorrebbe vedere accadere e delinea il
+                                lavoro necessario per raggiungere questi obiettivi. Pur affermando che il Web è
+                                diventato la piattaforma di comunicazione più importante del mondo, il CTO di FireFox di
+                                Mozilla Eric Rescoria e il Distinguished Engineer Bobby Holley hanno scritto che il Web
+                                ha problemi reali, con persone spiate, prive di potere e gravate da esperienze lente ed
+                                eccessivamente complesse.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img src="https://via.placeholder.com/300" width: 150px; height:150px; alt="img1"
+                            class="media-image" />
+                        <div class="article-body">
+                            <h4>Lorem ipsdfdsfsd sfsum</h4>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat
+                                eget laoreet. Orci varius natoque Sed mattis vitae nisl quis
+                                aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque penatibus et magnis dis parturient montes, nascetur
+                                ridiculus mus. Morbi nec varius lorem. penatibus et magnis dis
+                                parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <div class="conteinerimg">
+                <div class="banner1">
+                    <a href="http://www.financesolutions.it/">
+                        <img src="https://via.placeholder.com/970x90" width="970" height="90" alt="img1"
+                            class="media-ban" /></a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <ul class="footer-nav">
+                    <li><a href="/features">Termini e condizioni</a></li>
+                    <li><a href="/pricing">Privacy Policy</a></li>
+                </ul>
+
+                <div class="social">
+                    <a href="https://www.instagram.com/"><img src="https://img.icons8.com/fluency/512/instagram-new.png"
+                            width="40px" alt="instagram" /></a>
+                    <a href="https://www.facebook.com/"><img src="https://img.icons8.com/color/512/facebook.png"
+                            width="40px" alt="fb" /></a>
+                    <a href="https://www.twitter.com/"><img src="https://img.icons8.com/color/512/twitter-squared.png"
+                            width="40px" alt="twitter" /></a>
+                </div>
+
+                <p> Copyright 2022 © RCS Mediagroup S.p.a. Tutti i diritti sono riservati | Per la pubblicità :
+                    CAIRORCS MEDIA SpA - Direzione Pubblicità
+                    RCS MediaGroup S.p.A. - Divisione Quotidiani Sede legale: via Angelo Rizzoli, 8 - 20132 Milano |
+                    Capitale sociale: Euro 270.000.000,00
+                    Codice Fiscale, Partita I.V.A. e Iscrizione al Registro delle Imprese di Milano n.12086540155 |
+                    R.E.A. di Milano: 1524326 | ISSN 2499-0485</p>
+            </nav>
+        </footer>
+    </main>
+</body>
+
+</html>

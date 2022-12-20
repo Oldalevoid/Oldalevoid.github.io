@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    .elm2 {
+        border: 10px solid;
+        border-radius: 50%;
+        width: 120px;
+        height: 140px;
+    }
+
+    .elm2 {
+        animation-name: over-and-back;
+        animation-duration: 6s;
+    }
+
+    @keyframes over-and-back {
+        0% {
+            background-color: hsl(271, 49%, 54%, 0);
+            position: relative;
+            left: 0;
+        }
+
+        50% {
+            background-color: hsl(271, 49%, 54%, 1);
+            position: relative;
+            border-radius: 20%;
+            left: 350px;
+            width: 200px;
+        }
+
+        80% {
+            background-color: hsl(271, 49%, 54%, 1);
+            position: relative;
+            left: 550px;
+        }
+
+        100% {
+            background-color: hsl(271, 49%, 54%, 0);
+            position: relative;
+            left: 0;
+        }
+    }
+
+    :root {
+        overflow: hidden;
+        /* hides any part of the sun below the horizon */
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        /* centers the sun in the background */
+    }
+
+    .sun {
+        background-color: yellow;
+        border-radius: 50%;
+        /* creates a circular background */
+        height: 100vh;
+        /* makes the sun the size of the viewport */
+        aspect-ratio: 1 / 1;
+        animation: 4s linear 0s infinite alternate sun-rise;
+    }
+
+    @keyframes sun-rise {
+        from {
+            /* pushes the sun down past the viewport */
+            transform: translateY(110vh);
+        }
+
+        to {
+            /* returns the sun to its default position */
+            transform: translateY(0);
+        }
+    }
+</style>
+
+<body>
+    <div>
+        <div class="elm2">&nbsp;</div>
+    </div>
+
+    <div class="sun"></div>
+</body>
+
+</html>

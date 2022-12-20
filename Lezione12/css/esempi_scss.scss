@@ -1,0 +1,41 @@
+$myFont: Helvetica, sans-serif;
+$myColor: blue;
+$myFontSize: 12px;
+$myBigSize: 3em;
+$otherColor: green;
+$leftMargin: 10px;
+
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+  margin: auto;
+}
+
+h1 {
+    margin-left: $leftMargin;
+}
+
+p {
+    font-size: $myFontSize;
+    margin-left: $leftMargin;
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: $otherColor;
+  }
+}

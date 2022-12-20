@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito responsive</title>
+   
+</head>
+
+<style>
+    :root {
+    box-sizing: border-box;
+    --black-color: rgb(78, 2, 2);
+    --footer-bk-color: white;
+    --back_color_for_all: white;
+    /** dichiarare i colori qui **/
+  }
+  
+  *,
+  ::after,
+  ::before {
+    box-sizing: inherit;
+    margin: 0.5em;
+  }
+  
+  body * + * {
+    /*margin-top: 1.5em;*/
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    margin-bottom: 1.5em;
+    }
+  
+  header img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top:-150px;
+   
+  }
+
+  .banner {
+    margin-top: 170px;
+    
+  }
+  .banner img {
+    width: 1000px;
+    border-radius:15px;
+  }
+ 
+  
+  .hflex {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .social {
+    display: flex;
+    line-height: 5em;
+    margin-left: 45em;
+    margin-top: 1.5em;
+  }
+  
+  .immagec {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  
+  
+  h1 {
+    font-size: 4em;
+    font-weight: 700;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+  }
+  
+  
+  main {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  
+  /** section **/
+  
+  section::after {
+    display: block;
+    content: " ";
+    clear: both;
+  }
+  
+  section {
+    margin-right: -1.5em;
+    margin-bottom: -1.5em;
+  } 
+  
+  section::before {
+    display: table;
+    content: " ";
+  }
+  
+  /** articles **/
+  
+  article {
+    float: left;
+    width: calc(50% - 1.5em);
+    border: 1px solid var(--black-color);
+  }
+  
+  article h4 {
+    margin: 0;
+  }
+  
+  .articles > :nth-child(2n + 1) {
+    clear: left;
+  }
+  
+  .articles img {
+    float: left;
+    margin: 0 1.5em 1.5em 0;
+  }
+  
+  .articles .article-body {
+    overflow: auto;
+  }
+  
+  /** header **/
+  
+  header {
+    background-color: rgb(127, 33, 33);
+    padding: 1.5em;
+    border-radius: 15px;
+  }
+  
+  .header-nav {
+    display: flex;
+    padding: 0.5em;
+    list-style-type: none;
+    background-color: var(--black-color);
+    margin-top: 0
+  }
+  
+  .header-nav > li {
+    margin-top: 0;
+  }
+  
+  .header-nav > li > a {
+    display: block;
+    padding: 0.5em 1em;
+    background-color: var(--back_color_for_all);
+    color: var(--black-color);
+    text-decoration: none;
+  }
+  
+  .header-nav > li:nth-child(1n + 2) {
+    margin-left: 0.5em;
+  }
+  
+  .header-nav > li.nav-right {
+    margin-left: auto;
+  }
+  
+  /** footer **/
+  footer {
+    background-color: var(--black-color);
+    color: var(--footer-bk-color);
+  }
+  
+  .footer-nav {
+    display: flex;
+    float: left; /* per far allineare privacy e social*/
+    padding: 0.5em;
+    list-style-type: none;
+  }
+  .footer-nav > li {
+  margin-top: 0; /* per allineare li */
+}
+
+.footer-nav > li > a {
+  text-decoration: none;
+}
+
+.social {
+  display: flex;
+  line-height: 5em;
+  margin-left: 45em;
+
+}
+
+.social > a {margin-top:0}
+  
+  
+  
+  /** griglia centrale **/
+  .centergrid {
+    background-color: var(--back_color_for_all);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    border: 1px solid var(--black-color);
+    text-align: justify;
+    align-items: self-end;
+  }
+  
+  .first {
+  
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .second {
+  
+    grid-area: 1 / 2 / 2 / 3;
+    border-left: 1px solid var(--black-color);
+    margin-right: 10px;
+    border-right: 1px solid var(--black-color);
+    margin-left: 10px;
+  }
+  .third {
+  
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  
+  .centergrid:nth-child(n) {
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  aside {
+    float: left;
+  }
+
+  .containerimg {
+  display: inline-block;
+}
+.media-ban {
+  filter: drop-shadow(2px 10px 4px black);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  animation: ban1 3s ease 0s infinite normal forwards;
+}
+
+.border1 img {
+  width: 970px;
+  height: 90px;
+  object-fit:fill;
+}
+</style>
+
+<body>
+    <main>
+        <header>
+            <h1>Città di Amandola</h1>
+            <img src="./assets/1011191.png"
+            <nav>
+                <ul class="header-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/features">Chi siamo</a></li>
+                    <li><a href="/pricing">Dove siamo</a></li>
+                    <li class="nav-right">
+                        <a href="/about">Contatti</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="banner">
+                <img src="assets/banner-pirelli.jpg" alt="Il corriere dei web developer" class="immagec" />
+            </div>
+            
+        </header>
+        <main>
+            <section>
+                <div class="articles">
+                    <article>
+                        <img src="https://via.placeholder.com/250x100" alt="img1" class="media-image">
+                        <div class="article-body">
+                            <h4>CLAMOROSO!! CESARE LO HA PRESO NEL CULO!!</h4>
+                            <p>
+                                Questa mattina la cittadina &grave; scossa da una notizia terribile. Il Sig. Ceasar Palace è scivolato sul tappettino 
+                                puntellato all&apos;ingresso del supermercato e si è infilato un tronchetto nel culo.
+                                I vigili del fuoco non hanno fatto un cazzo come al solito!
+                            </p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img src="https://via.placeholder.com/100x120" alt="img1" class="media-image">
+                        <div class="article-body">
+                            <h4>Lorem ipsum</h4>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="articles">
+                    <article>
+                        <img src="https://via.placeholder.com/200" alt="img1" class="media-image">
+                        <div class="article-body">
+                            <h4>Lorem sfsdf</h4>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque
+                                penatibu Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci
+                                varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.s et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img src="https://via.placeholder.com/180x130" alt="img1" class="media-image">
+                        <div class="article-body">
+                            <h4>Lorem ipsdfdsfsd sfsum</h4>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci
+                                varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <div class="containerimg">
+              <div class="banner1">
+                <a href="https://www.coal.it" alt="coal"> </a>
+                 <img src="https://www.simpleimageresizer.com/_uploads/photos/310b50e0/supermercato_1_970x130.jpg"  alt="img1" class="media-ban" style="margin-right:auto; margin-left:auto; ">
+              </div>
+            </div>
+    
+
+            <!-- mettere almeno due pubblicità quadrate-->
+
+            <aside class="centergrid">
+                <div class="first">
+                    <h3>Team collaboration done right</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                        maximus euismod dapibus. Aliquam erat volutpat. Nam sed
+                        rhoncus diam. Vestibulum nisl leo, dignissim non placerat ac,
+                        fermentum non leo. Morbi lacinia dui ut lacinia hendrerit. Ut
+                        rutrum odio id mauris laoreet condimentum. Nullam leo purus,
+                        interdum vel accumsan at, egestas ac tortor.
+                    </p>
+                </div>
+
+                <div class="second">
+                    <h3>Team collaboration done right</h3>
+                    <img src="https://via.placeholder.com/250" alt="img1" class="media-image">
+                </div>
+
+                <div class="third">
+                    <h3>Team collaboration done right</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                        maximus euismod dapibus. Aliquam erat volutpat. Nam sed
+                        rhoncus diam. Vestibulum nisl leo, dignissim non placerat ac,
+                        fermentum non leo. Morbi lacinia dui ut lacinia hendrerit. Ut
+                        rutrum odio id mauris laoreet condimentum. Nullam leo purus,
+                        interdum vel accumsan at, egestas ac tortor.
+                    </p>
+                </div>
+            </aside>
+
+            <section>
+                <div class="articles">
+                    <article>
+                        <img src="https://via.placeholder.com/150" alt="img1" class="media-image">
+                        <div class="article-body">
+                            <h4>Lorem sfsdf</h4>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque
+                                penatibu Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci
+                                varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.s et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img src="https://via.placeholder.com/150" alt="img1" class="media-image">
+                        <div class="article-body">
+                            <h4>Lorem ipsdfdsfsd sfsum</h4>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci
+                                varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <nav>
+                <ul class="footer-nav">
+                    <li><a href="/features">Termini e condizioni</a></li>
+                    <li><a href="/pricing">Privacy Policy</a></li>
+                </ul>
+
+                <div class="social">
+                    <a href="https://www.instagram.com/"><img src="https://img.icons8.com/fluency/512/instagram-new.png"
+                            width="40px" alt="instagram" /></a>
+                    <a href="https://www.facebook.com/"><img src="https://img.icons8.com/color/512/facebook.png"
+                            width="40px" alt="fb" /></a>
+                    <a href="https://www.twitter.com/"><img src="https://img.icons8.com/color/512/twitter-squared.png"
+                            width="40px" alt="twitter" /></a>
+                </div>
+
+                <p> Copyright 2022 © RCS Mediagroup S.p.a. Tutti i diritti sono riservati | Per la pubblicità :
+                    CAIRORCS MEDIA SpA - Direzione Pubblicità
+                    RCS MediaGroup S.p.A. - Divisione Quotidiani Sede legale: via Angelo Rizzoli, 8 - 20132 Milano |
+                    Capitale sociale: Euro 270.000.000,00
+                    Codice Fiscale, Partita I.V.A. e Iscrizione al Registro delle Imprese di Milano n.12086540155 |
+                    R.E.A. di Milano: 1524326 | ISSN 2499-0485</p>
+            </nav>
+        </footer>
+    </main>
+</body>
+
+</html>
