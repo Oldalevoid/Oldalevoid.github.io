@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../lezione12/css/mybootlocal.css" />
+    <style>
+        
+.box{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 100%, rgba(0,212,255,1) 100%);
+    width: 100%;
+    height: 150px;
+    border:1px black;
+    margin-left:0%;
+    margin-right:0%;
+    margin-bottom:40px;
+    border-radius: 15px;
+    }
+
+.box h1 {
+    font-family: fantasy;
+    color: black;
+    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 253, 253);
+    text-align:left;
+    font-style: oblique;
+    font-size: 250%;
+    margin-top: 30px;
+    display:inline-block;
+} 
+
+.marginslide {
+   
+    
+}
+
+    
+/* Add a black background color to the top navigation */
+.topnav {
+    background: rgb(6, 5, 20);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(207, 14, 14) 100%, rgba(0,212,255,1) 100%);
+    overflow: hidden;
+    z-index: 1000;
+    display:flex;
+    width:100%;
+    
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #f54028;
+    color: white;
+}
+
+.parent { 
+display: grid; 
+grid-template-columns: repeat(5, 1fr); 
+grid-template-rows: repeat(3, 1fr); 
+grid-column-gap: 10px;
+grid-row-gap: 0px; 
+}
+.div1 { grid-area: 1 / 1 / 4 / 4; } 
+.div2 { grid-area: 1 / 4 / 4 / 6; } 
+
+.parent1 { 
+display: grid; 
+grid-template-columns: repeat(5, 1fr); 
+grid-template-rows: repeat(3, 1fr); 
+grid-column-gap: 20px;
+grid-row-gap: 0px; 
+}
+.div1 { grid-area: 1 / 1 / 4 / 4; } 
+.div2 { grid-area: 1 / 4 / 4 / 6; } 
+
+.footer {
+
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 100%, rgba(0,212,255,1) 100%);
+    width: 100%;
+    height: 300px;
+    border:1px black;
+    margin-left:0%;
+    margin-right:0%;
+    margin-bottom:40px;
+    border-radius: 15px;
+    
+    }
+
+.hrstyle{
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+    margin-top:15%;}
+
+
+
+footer h1  {color:#f2f2f2}
+footer h2 {color:rgb(255, 253, 253)}
+
+
+
+
+
+
+
+
+    
+    
+
+      
+    </style>
+</head>
+<body>
+    <div class="container"> 
+    <header> 
+        <div class="box">
+        <h1> Gigliola Marinangeli Artista </h1> 
+        <nav class="topnav">
+            <a class="active" href="url_home">Home</a>
+            <a href="url_news">Chi sono</a>
+            <a href="url_contatti">Le mie opere</a>
+            <a href="url_info">Contatti</a>
+
+        </nav>
+
+        
+        </div>
+
+    </header>
+
+
+
+      <!-- qui ho combinato il grid con il bootstrap-->
+        <div class="parent"> 
+            <div class="div1"> 
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://i0.wp.com/blog.dantebus.com/wp-content/uploads/2022/06/01.jpg?w=1920&ssl=1" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <hr>
+          </div>
+          
+          </div>
+          
+
+          <!-- questa è una card, speriamo funzioni-->
+           <div class="div2">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="..." class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title"> Biografia </h5>
+                      <p class="card-text"> Mi chiamo Marinangeli Gigliola, nata e sempre vissuta nelle Marche. Amo dipingere e sono autodidatta. Come
+                        ogni bambina avevo un sogno ed era quello di diventare una pittrice, poi la vita mi ha condotto verso il mondo dei numeri per mestiere, ma ho sempre mantenuto viva questa passione!
+                      </p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+            </div>
+            
+        </div>
+
+        
+            <div class="parent1">
+                <div class="div1">
+                    <div class="card text-bg-dark">
+                        <img src="https://www.alesteadventour.it/wp-content/uploads/2015/10/Parco-Nazionale-monti-sibillini.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title">I sibillini come fonte di ispirazione </h5>
+                          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+
+                          </p>
+                          <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                </div>
+                <div class="div2">
+                    <h1> Come realizzo le mie opere</h1>
+
+                   
+                
+                  
+
+            
+            </div>
+            </div>
+            <hr class="hrstyle">
+            
+            
+              
+
+
+          
+          
+           
+
+
+        
+
+        
+        
+
+    </main>
+
+
+    
+
+    
+    
+
+
+    
+</body>
+</html>

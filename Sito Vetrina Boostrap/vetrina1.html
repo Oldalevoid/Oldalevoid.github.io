@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Il corriere del developer</title>
-    <link rel="stylesheet" href="css/mybootlocal.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 </head>
 
 <body>
@@ -79,13 +79,13 @@
             </div>
         </nav>
 
-        <section id="service">
+        <section id="service" class="bg-light shadow">
             <h1 class="text-center fs-2">IN PRIMO PIANO</h1>
             <div class="container-fluid" id="service-container">
                 <div class="row" id="banner-row">
                     <div class="col-md-4" id="service-col1">
-                        <img src="../sito_vetrina_bootstrap/assets/dimaria.jpg"
-                            class="img-fluid rounded mx-auto d-block" alt="..." />
+                        <img src="assets/giroud.jpg" class="img-fluid rounded mx-auto d-block img-thumbnail mw-100"
+                            alt="..." />
                         <h3>Website Design</h3>
 
                         <p>
@@ -97,8 +97,8 @@
 
                     </div>
                     <div class="col-md-4" id="service-col2">
-                        <img src="../sito_vetrina_bootstrap/assets/dimaria.jpg"
-                            class="img-fluid rounded mx-auto d-block" alt="..." />
+                        <img src="assets/musk2.png" class="img-fluid rounded mx-auto d-block img-thumbnail h-50"
+                            alt="..." />
                         <h3>Bulk SMS</h3>
 
                         <p>
@@ -111,8 +111,8 @@
 
                     </div>
                     <div class="col-md-4" id="service-col3">
-                        <img src="../sito_vetrina_bootstrap/assets/dimaria.jpg"
-                            class="img-fluid rounded mx-auto d-block" alt="..." />
+                        <img src="assets/dimaria.jpg" class="img-fluid rounded mx-auto d-block img-thumbnail mw-100"
+                            alt="..." />
                         <h3>Payment Gateways</h3>
 
                         <p>
@@ -129,8 +129,7 @@
         </section>
 
         <section>
-            <div class="container-fluid" id="service-container">
-
+            <div class="container-fluid mt-2" id="service-container">
                 <div class="row justify-content-start">
                     <div class="col-md-8">
                         <!-- main title -->
@@ -147,35 +146,33 @@
                                 <img src="assets/messi.jpg" class="card-img-bottom" alt="...">
                             </div>
                             <!-- second article -->
-                            <div class="container d-flex justify-content-between">
-                                <div class="d-flex align-items-center mb-2 mt-4">
-                                    <div class="row mb-3 text-justify">
-                                        <div class="col-6 themed-grid-col">
-                                            <h4>Angular 16 per migliorare il rendering lato server</h4>
-                                            <img class="d-flex container-fluid" src="assets/dimaria.jpg"
-                                                alt="img1" /><br>
-                                            Provvisoriamente previsto per maggio 2023, Angular 16 esplorerà
-                                            l'idratazione e i miglioramenti dell'usabilità del rendering lato
-                                            server, con un primo passo costituito dall'idratazione non
-                                            distruttiva. Questa tecnica consentirebbe il riutilizzo del DOM
-                                            lato server e, anziché eseguire nuovamente il rendering,
-                                            collegherebbe solo listener di eventi e creerebbe strutture di
-                                            dati necessarie al runtime di Angular.
-                                        </div>
-                                        <div class="col-6 themed-grid-col">
-                                            <h4>.NET Core 3.1 di Microsoft si avvicina alla fine</h4>
-                                            <img class="d-flex container-fluid" src="assets/giroud.jpg"
-                                                alt="img1" /><br>
-                                            .NET Core 3.1 di Microsoft, una versione del framework di sviluppo
-                                            software multipiattaforma open source di Microsoft pubblicato a
-                                            dicembre 2019, non sarà più supportato a partire dal 13 dicembre
-                                            2022. .NET Core 3.1 raggiunge lo stato di fine supporto quel
-                                            giorno, con Microsoft che interrompe la manutenzione degli
-                                            aggiornamenti e del supporto tecnico, ha affermato la società.
-                                        </div>
+                            <div class="container-fluid justify-content-between">
 
+                                <div class="row mb-3 mt-3 text-justify">
+                                    <div class="col-md-6 themed-grid-col">
+                                        <h4>Ancora un gol!</h4>
+                                        <img class="d-flex container-fluid" src="assets/dimaria.jpg" alt="img1" /><br>
+                                        Provvisoriamente previsto per maggio 2023, Angular 16 esplorerà
+                                        l'idratazione e i miglioramenti dell'usabilità del rendering lato
+                                        server, con un primo passo costituito dall'idratazione non
+                                        distruttiva. Questa tecnica consentirebbe il riutilizzo del DOM
+                                        lato server e, anziché eseguire nuovamente il rendering,
+                                        collegherebbe solo listener di eventi e creerebbe strutture di
+                                        dati necessarie al runtime di Angular.
                                     </div>
+                                    <div class="col-md-6 themed-grid-col">
+                                        <h4>.NET Core 3.1 di Microsoft si avvicina alla fine</h4>
+                                        <img class="d-flex container-fluid" src="assets/giroud.jpg" alt="img1" /><br>
+                                        .NET Core 3.1 di Microsoft, una versione del framework di sviluppo
+                                        software multipiattaforma open source di Microsoft pubblicato a
+                                        dicembre 2019, non sarà più supportato a partire dal 13 dicembre
+                                        2022. .NET Core 3.1 raggiunge lo stato di fine supporto quel
+                                        giorno, con Microsoft che interrompe la manutenzione degli
+                                        aggiornamenti e del supporto tecnico, ha affermato la società.
+                                    </div>
+
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -211,137 +208,18 @@
                             eseguire Wasm sul lato server. Ad esempio, la mia azienda, SingleStore, lo sta utilizzando
                             nel nostro database.
                         </p>
-
                     </div>
-
-
                 </div>
             </div>
             <hr class="border opacity-50">
         </section>
 
-        <main>
-            <!-- two artciles -->
-            <div class="row mb-3 text-justify">
-                <div class="col-md-6 themed-grid-col">
-                    <h4>Angular 16 per migliorare il rendering lato server</h4>
-                    <img src="https:via.placeholder.com/200" alt="img1" /><br>
-                    Provvisoriamente previsto per maggio 2023, Angular 16 esplorerà
-                    l'idratazione e i miglioramenti dell'usabilità del rendering lato
-                    server, con un primo passo costituito dall'idratazione non
-                    distruttiva. Questa tecnica consentirebbe il riutilizzo del DOM
-                    lato server e, anziché eseguire nuovamente il rendering,
-                    collegherebbe solo listener di eventi e creerebbe strutture di
-                    dati necessarie al runtime di Angular.
-                </div>
-                <div class="col-md-6 themed-grid-col">
-                    <h4>.NET Core 3.1 di Microsoft si avvicina alla fine</h4>
-                    <img src="https:via.placeholder.com/200" alt="img1" /><br>
-                    .NET Core 3.1 di Microsoft, una versione del framework di sviluppo
-                    software multipiattaforma open source di Microsoft pubblicato a
-                    dicembre 2019, non sarà più supportato a partire dal 13 dicembre
-                    2022. .NET Core 3.1 raggiunge lo stato di fine supporto quel
-                    giorno, con Microsoft che interrompe la manutenzione degli
-                    aggiornamenti e del supporto tecnico, ha affermato la società.
-                </div>
-            </div>
-
-
-            <hr class="border opacity-50">
-            <!-- banner 1-->
-            <a href="https://www.quellocheconta.gov.it/it/">
-                <img src="https://www.quellocheconta.gov.it/export/sites/sitopef/modules/img/news/news100/Banner_Frame.jpg"
-                    alt="img1" class="media-ban" width="100%" /></a>
-
-            <hr class="border opacity-50">
-
-            <!-- two articles and a photo right -->
-            <div class="d-flex">
-                <div class="p-2 flex-fill">
-                    <div class="row mb-3 text-justify">
-                        <div class="col-6 themed-grid-col">
-                            <h4>Angular 16 per migliorare il rendering lato server</h4>
-                            <img src="https:via.placeholder.com/200" alt="img1" /><br>
-                            Provvisoriamente previsto per maggio 2023, Angular 16 esplorerà
-                            l'idratazione e i miglioramenti dell'usabilità del rendering lato
-                            server, con un primo passo costituito dall'idratazione non
-                            distruttiva. Questa tecnica consentirebbe il riutilizzo del DOM
-                            lato server e, anziché eseguire nuovamente il rendering,
-                            collegherebbe solo listener di eventi e creerebbe strutture di
-                            dati necessarie al runtime di Angular.
-                        </div>
-                        <div class="col-md-6 themed-grid-col">
-                            <h4>.NET Core 3.1 di Microsoft si avvicina alla fine</h4>
-                            <img src="https:via.placeholder.com/200" alt="img1" /><br>
-                            .NET Core 3.1 di Microsoft, una versione del framework di sviluppo
-                            software multipiattaforma open source di Microsoft pubblicato a
-                            dicembre 2019, non sarà più supportato a partire dal 13 dicembre
-                            2022. .NET Core 3.1 raggiunge lo stato di fine supporto quel
-                            giorno, con Microsoft che interrompe la manutenzione degli
-                            aggiornamenti e del supporto tecnico, ha affermato la società.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- photo left and two articles -->
-
-            <hr class="border opacity-50">
-            <div class="row mb-3 text-justify">
-                <div class="col-md-8 themed-grid-col">
-                    <div class="row mb-3 text-justify">
-                        <div class="col-4 themed-grid-col">
-                            <div class="card">
-                                <img src="https:via.placeholder.com/200" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the card's content.</p>
-                                    <a href="#">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 themed-grid-col">
-                            <div class="card">
-                                <img src="https:via.placeholder.com/200" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the card's content.</p>
-                                    <a href="#">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 themed-grid-col">
-                            <div class="card">
-                                <img src="https:via.placeholder.com/200" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the card's content.</p>
-                                    <a href="#">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md-4 themed-grid-col">
-                    <div class="card text-bg-dark">
-                        <img src="assets/messi.jpg" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                </div>
-                <hr class="border opacity-50">
-                <div class="row mb-3 text-justify">
-                    <div class="col-md-6 themed-grid-col">
+        <section>
+            <div class="container-fluid" id="service-container">
+                <div class="row justify-content-start">
+                    <div class="col-md-6 themed-grid-col mb-3">
+                        <img src="assets/giroud.jpg" alt="img1" class="float-start me-3 img-fluid" />
                         <h4>Angular 16 per migliorare il rendering lato server</h4>
-                        <img src="https:via.placeholder.com/200" alt="img1" /><br>
                         Provvisoriamente previsto per maggio 2023, Angular 16 esplorerà
                         l'idratazione e i miglioramenti dell'usabilità del rendering lato
                         server, con un primo passo costituito dall'idratazione non
@@ -350,9 +228,9 @@
                         collegherebbe solo listener di eventi e creerebbe strutture di
                         dati necessarie al runtime di Angular.
                     </div>
-                    <div class="col-md-6 themed-grid-col">
+                    <div class="col-md-6 themed-grid-col mb-3">
+                        <img src="assets/musk1.png" alt="img1" class="float-start me-3 img-fluid" />
                         <h4>.NET Core 3.1 di Microsoft si avvicina alla fine</h4>
-                        <img src="https:via.placeholder.com/200" alt="img1" /><br>
                         .NET Core 3.1 di Microsoft, una versione del framework di sviluppo
                         software multipiattaforma open source di Microsoft pubblicato a
                         dicembre 2019, non sarà più supportato a partire dal 13 dicembre
@@ -361,44 +239,129 @@
                         aggiornamenti e del supporto tecnico, ha affermato la società.
                     </div>
                 </div>
-                <hr class="border opacity-50">
-
-                <!-- banner 2-->
-                <a href="https://www.quellocheconta.gov.it/it/">
-                    <img src="https://www.quellocheconta.gov.it/export/sites/sitopef/modules/img/news/news100/Banner_Frame.jpg"
-                        alt="img1" class="media-ban" width="100%" /></a>
             </div>
-        </main>
+            <hr class="border opacity-50">
+            <a href="https://www.quellocheconta.gov.it/it/">
+                <img src="https://www.quellocheconta.gov.it/export/sites/sitopef/modules/img/news/news100/Banner_Frame.jpg"
+                    alt="img1" class="media-ban" width="100%" /></a>
+            <hr class="border opacity-50">
+        </section>
 
+        <section>
+            <div class="container-fluid" id="service-container">
+                <div class="row justify-content-start">
+                    <div class="col-md-6 themed-grid-col mb-3">
+                        <img src="assets/messi.jpg" alt="img1" class="float-start me-3 img-fluid" />
+                        <h4>Angular 16 per migliorare il rendering lato server</h4>
+                        Provvisoriamente previsto per maggio 2023, Angular 16 esplorerà
+                        l'idratazione e i miglioramenti dell'usabilità del rendering lato
+                        server, con un primo passo costituito dall'idratazione non
+                        distruttiva. Questa tecnica consentirebbe il riutilizzo del DOM
+                        lato server e, anziché eseguire nuovamente il rendering,
+                        collegherebbe solo listener di eventi e creerebbe strutture di
+                        dati necessarie al runtime di Angular.
+                    </div>
+                    <div class="col-md-6 themed-grid-col mb-3">
+                        <img src="assets/musk2.png" alt="img1" class="float-start me-3 img-fluid" />
+                        <h4>Musk e Twitter</h4>
+                        .NET Core 3.1 di Microsoft, una versione del framework di sviluppo
+                        software multipiattaforma open source di Microsoft pubblicato a
+                        dicembre 2019, non sarà più supportato a partire dal 13 dicembre
+                        2022. .NET Core 3.1 raggiunge lo stato di fine supporto quel
+                        giorno, con Microsoft che interrompe la manutenzione degli
+                        aggiornamenti e del supporto tecnico, ha affermato la società.
+                    </div>
+                </div>
+            </div>
+            <hr class="border opacity-50">
+        </section>
 
-        <footer class="d-flex flex-wrap justify-content-between py-3 my-4 border-top ">
+        <section>
+            <div class="container-fluid" id="service-container">
+                <div class="row justify-content-start">
+                    <div class="col-md-8 themed-grid-col">
+                        <div class="row mb-3 text-justify">
+                            <div class="col-md-4 themed-grid-col">
+                                <div class="card">
+                                    <img src="assets/dimaria.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk of the card's content.</p>
+                                        <a href="#">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 themed-grid-col">
+                                <div class="card">
+                                    <img src="assets/giroud.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk of the card's content.</p>
+                                        <a href="#">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 themed-grid-col">
+                                <div class="card">
+                                    <img src="assets/juve.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk of the card's content.</p>
+                                        <a href="#">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 themed-grid-col">
+                        <div class="card text-bg-dark">
+                            <img src="assets/messi.jpg" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <div>
-                <ul class="nav list-unstyled mt-4 mb-4">
+        <footer class="py-3 my-4 border-top ">
+
+            <div class="d-flex justify-content-between ">
+                <ul class="nav list-unstyled mt-4 mb-4 align-items-end">
                     <li><a href="/features" class="text-decoration-none text-reset me-4">Termini e condizioni</a></li>
                     <li><a href="/pricing" class="text-decoration-none text-reset">Privacy Policy</a></li>
                 </ul>
+                <ul class="nav list-unstyled d-flex justify-content-end">
+                    <li class="ms-3">
+                        <a href="https://www.instagram.com/"><img
+                                src="https://img.icons8.com/fluency/512/instagram-new.png" width="40px"
+                                alt="instagram" /></a>
+                    </li>
+                    <li class="ms-3 ">
+                        <a href="https://www.facebook.com/"><img src="https://img.icons8.com/color/512/facebook.png"
+                                width="40px" alt="fb" /></a>
+                    </li>
+                    <li class="ms-3">
+                        <a href="https://www.twitter.com/"><img
+                                src="https://img.icons8.com/color/512/twitter-squared.png" width="40px"
+                                alt="twitter" /></a>
+                    </li>
+                </ul>
             </div>
 
-            <ul class="nav list-unstyled d-flex justify-content-end">
-                <li class="ms-3">
-                    <a href="https://www.instagram.com/"><img src="https://img.icons8.com/fluency/512/instagram-new.png"
-                            width="40px" alt="instagram" /></a>
-                </li>
-                <li class="ms-3 ">
-                    <a href="https://www.facebook.com/"><img src="https://img.icons8.com/color/512/facebook.png"
-                            width="40px" alt="fb" /></a>
-                </li>
-                <li class="ms-3">
-                    <a href="https://www.twitter.com/"><img src="https://img.icons8.com/color/512/twitter-squared.png"
-                            width="40px" alt="twitter" /></a>
-                </li>
-            </ul>
-
-
-
             <div class="d-flex ">
-                <span class="mb-3 mb-4  lh-1">Copyright 2022 © RCS
+                <span class="mb-3 mb-4 fs-6 fw-lighter lh-1">Copyright 2022 © RCS
                     Mediagroup S.p.a. Tutti i diritti sono
                     riservati | Per la pubblicità : CAIRORCS MEDIA SpA - Direzione
                     Pubblicità RCS MediaGroup S.p.A. - Divisione Quotidiani Sede legale:
@@ -406,12 +369,11 @@
                     270.000.000,00 Codice Fiscale, Partita I.V.A. e Iscrizione al
                     Registro delle Imprese di Milano n.12086540155 | R.E.A. di Milano:
                     1524326 | ISSN 2499-0485
-
                 </span>
             </div>
 
 
-            <div class="d-flex">
+            <div class="d-flex justify-content-center">
                 <p> © 2022 Copyright:
                     <a class="text-black text-decoration-none" href="#">Il corriere del developer </a>
                 </p>

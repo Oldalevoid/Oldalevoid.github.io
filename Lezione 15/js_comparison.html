@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comaparison</title>
+</head>
+
+<body>
+    <script>
+
+        let shoppingDone = true;
+        let childsAllowance;
+
+        if (shoppingDone === true) {
+            childsAllowance = 10;
+        } else {
+            childsAllowance = 5;
+        }
+        console.log("Quanti soldi ha? " + childsAllowance);
+
+        var num = 5;
+        var fakeNum = "5";
+
+        console.log("Analizzo " + num + " e " + fakeNum);
+        if (num === fakeNum) {
+            console.log("=== identici");
+        } else if (num == fakeNum) {
+            console.log("== uguali");
+        } else {
+            console.log("Sono diversi");
+        }
+
+        var num = 7;
+        var fakeNum = 6;
+
+        console.log("Analizzo " + num + " e " + fakeNum);
+        if (num !== fakeNum) {
+            console.log("!== non sono uguali 1");
+        } else if (num != fakeNum) {
+            console.log("!= non sono uguali 2");
+        } else {
+            console.log("Sono uguali");
+        }
+
+        console.log("Analizzo " + num + " e " + fakeNum);
+        if (num >= fakeNum) {
+            console.log(num + " è maggiore uguale di " + fakeNum);
+        } else {
+            console.log(fakeNum + " è maggiore di " + num);
+        }
+
+        //operatore ternario  ternary
+        const age = 26;
+        const beverage = age >= 21 ? "Beer" : "Juice";
+        console.log("Puoi bere " + beverage); // "Beer"
+
+        var legalAge = 19;
+        var canDrink = legalAge < 18 ? "Coca cola" : "Birra";
+        console.log("Puoi bere " + canDrink); // "Beer"
+
+        //switch
+        const expr = 'Apple';
+        switch (expr) {
+            case 'Oranges':
+                console.log('Oranges are $0.59 a pound.');
+                break;
+            case 'Apple':
+                console.log ('Apple are free');
+                break;
+            case 'Mangoes':
+            case 'Papayas':
+                console.log('Mangoes and Papayas are $2.79 a pound.');
+                // expected output: "Mangoes and papayas are $2.79 a pound."
+                break;
+            default:
+                console.log(`Sorry, we are out of ${expr}.`);
+        }
+
+
+    </script>
+
+</body>
+
+</html>

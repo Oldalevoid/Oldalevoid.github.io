@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primo Javascript</title>
+
+</head>
+
+<body>
+    <h1>La mia pagina</h1>
+
+    <script>
+        //costanti
+        const myConstVal = 5;
+
+        //Declare my vars and their types
+        var myFirstVariable = "hello";
+        let mySecondVar = "world"; //String
+        let myVariable = 10;  //Number
+        let myFakeNum = "5"; //string
+        let isTrueOrFalse = true; //Boolean
+        let myArray = [1,'Bob','Steve',10];  //Array
+        let myObj = document.querySelector('h1'); //Obj
+
+        console.log ("Message :"+myFirstVariable + mySecondVar);
+
+        console.log ("Message :"+myFirstVariable + myVariable);
+
+        let fakeSum = myVariable+myFakeNum;
+        console.log ("Result :"+fakeSum);  //concatena string + num
+
+
+        //Operatori aritmetici
+        let myFirstNum = 5;
+        let mySecondNum = 7;
+        let my3Num = 2;
+
+        myFirstNum = 8;  //change value
+
+        console.log ("myFirstNum "+myFirstNum);
+        myFirstNum++;
+        console.log ("myFirstNum "+myFirstNum);
+        myFirstNum=myFirstNum+1;
+        console.log ("myFirstNum "+myFirstNum);
+        myFirstNum--;
+        console.log ("myFirstNum "+myFirstNum);
+        myFirstNum=myFirstNum-1;
+        console.log ("myFirstNum "+myFirstNum);
+
+        //Somma
+        var mySum = myFirstNum+ mySecondNum;
+        console.log ("Totale "+mySum);
+
+        //Precedenza fra operatori prima * e /
+        var mediaSbagliata = myFirstNum+mySecondNum+my3Num/3;
+        console.log ("Media sbagliata "+mediaSbagliata);
+        var mediaOk = (myFirstNum+mySecondNum+my3Num)/3;
+        console.log ("Media corretta "+mediaOk);
+
+        var finalResult = mediaOk / myConstVal;
+        console.log ("Result "+finalResult);
+
+        /*
+        Questo è
+        un commento multi riga
+        */
+
+        //apro un pop-up
+        alert("hello world!");
+
+        <!-- scrivo nella console del browser -->
+        console.log("ciao sono Paolo");
+    </script>
+
+</body>
+
+</html>

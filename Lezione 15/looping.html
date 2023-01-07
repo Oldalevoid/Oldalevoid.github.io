@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+
+<body>
+    <script>
+        // Loop che serve ad iterare un qualcosa
+        const cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
+        for (const cat of cats) {
+            console.log(cat);
+        }
+        console.log('*****');
+
+        for (let i = 0; i < cats.length; i++) {
+            console.log(cats[i]);
+        }
+        console.log('*****');
+
+        let myFavoriteCats = 'My cats are called ';
+
+        i = 0;
+
+        while (i < cats.length) {
+            if (i === cats.length - 1) {
+                myFavoriteCats += `and ${cats[i]}.`;
+            } else {
+                myFavoriteCats += `${cats[i]}, `;
+            }
+
+            i++;
+        }
+
+        console.log(myFavoriteCats);
+
+        console.log('*****');
+
+        myFavoriteCats = 'My cats are called ';
+
+        i = 0;
+
+        do {
+            if (i === cats.length - 1) {
+                myFavoriteCats += `and ${cats[i]}.`;
+            } else {
+                myFavoriteCats += `${cats[i]}, `;
+            }
+
+            i++;
+        } while (i < cats.length);
+
+        console.log(myFavoriteCats);
+
+        console.log('*****');
+
+        var myNum = 10;
+        for (let i = 1; i <= 5; i++) {
+            console.log(`Incremento ${myNum} di 1 da ` + myNum);
+            myNum++;
+        }
+        console.log("Valore finale " + myNum);
+
+        console.log("timeout...");
+        setTimeout(() => { console.log("this is the first message") }, 5000);
+        setTimeout(() => { console.log("this is the second message") }, 3000);
+        setTimeout(() => { console.log("this is the third message") }, 1000);
+
+       
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizi</title>
+</head>
+
+<body>
+    <script>
+
+        //Esercizio num. 1
+        //scrivi un programma che dati 5 numeri restituisca in output la somma e la media.
+        var my1Num = Number(window.prompt("Dammi un numero", ""));
+        var my2Num = 7;
+        var my3Num = 11;
+        var my4Num = 25;
+        var my5Num = 30;
+
+        var mySum = my1Num + my2Num + my3Num + my4Num + my5Num;
+        console.log("Totale:" + mySum);
+
+        var media = (my1Num + my2Num + my3Num + my4Num + my5Num) / 5;
+        console.log("Media:" + media);
+
+        //Esercizio num.2
+        //Scrivi un programma che dato l'anno corrente e un anno di nascita determini: età della persona e quanti anni sono necessari per arrivare a 100
+        //https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt
+        //const aNumber = Number(window.prompt("Type a number", ""));
+        var annoCorrente = 2022;  //TODO qui si può prendere dal calendario
+
+        var annoNascita = Number(window.prompt("In che anno sei nato?", ""));
+
+        var anni = annoCorrente - annoNascita;
+        console.log("Anni:" + anni);
+        var cento = 100 - anni;
+
+        if (cento <= 0) {
+            console.log("Sei ULTRACENTENARIO complimenti!");
+        } else {
+            console.log("Per arrivare a 100 anni ti mancano " + cento + " anni.");
+        }
+
+
+        //Esercizio 3
+        /*Scrivi un programma che dato un numero stampi la tabellina corrispondente.
+        Esempio:
+        Input: 5
+        Output: 0 5 10 15 20 25 30 35 40 45 50
+        */
+
+        var numero = "";
+        var tabellina = prompt("Quale tabellina vuoi stampare?");
+        for (var i = 1; i < 11; i++) {
+            numero += i * tabellina + " ";
+        }
+        //5x1 =
+        //5x2 =
+        console.log("tabellina " + numero)
+
+        //Esercizio 4
+        /*
+        Che giorno è oggi?
+         Scrivi un programma che dato un numero intero compreso tra 1 a 7
+        visualizzi il corrispondente giorno della settimana. Sapendo che:
+            1 = lunedì
+            2 = martedÃ¬
+            3 = mercoledÃ¬
+            ...
+            7 = domenica
+        Utilizza il costrutto Switch-case e prevedi anche il caso in cui il valore immesso non sia valido
+        (nel caso stampare un messaggio di errore a tua scelta).
+        Esempi:
+            Input: numero = 6
+            Output: "Sabato"
+            Input: numero = 10
+            Output: "Errore! Giorno della settimana non valido!"
+        Variante:
+        Scrivere una versione che anziché giorni della settimana, visualizzi i nomi dei mesi.
+        */
+        const giorno = prompt("Inserisci un numero del giorno della settimana");
+        switch (giorno) {
+            case "1":
+                console.log("Lunedì");
+                break;
+            case "2":
+                console.log("martedì");
+                break;
+            case "3":
+                console.log("mercoledì");
+                break;
+            case "4":
+                console.log("giovedì");
+                break;
+            case "5":
+                console.log("venerdì");
+                break;
+            case "6":
+                console.log("sabato");
+                break;
+            case "7":
+                console.log("domenica");
+                break;
+            default:
+                console.log("Giorno della settimana non valido")
+        }
+
+        const mese = prompt("Inserisci un numero del mese");
+        switch (mese) {
+            case "1":
+                console.log("Gennaio");
+                break;
+            case "2":
+                console.log("Febbraio");
+                break;
+            case "3":
+                console.log("Marzo");
+                break;
+            case "4":
+                console.log("Aprile");
+                break;
+            case "5":
+                console.log("Maggio");
+                break;
+            case "6":
+                console.log("Giugno");
+                break;
+            case "7":
+                console.log("Luglio");
+                break;
+            case "8":
+                console.log("Agosto");
+                break;
+            case "9":
+                console.log("Settembre");
+                break;
+            case "10":
+                console.log("Ottobre");
+                break;
+            case "11":
+                console.log("Novembre");
+                break;
+            case "12":
+                console.log("Dicembre");
+                break;
+
+            default:
+                console.log("Mese non valido")
+        }
+
+
+    </script>
+
+</body>
+
+</html>
