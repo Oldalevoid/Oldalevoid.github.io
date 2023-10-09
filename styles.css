@@ -599,6 +599,10 @@ margin-left: 3rem;}
   .dropdown {display: none;}
   .navbar1 {display: inline-block;}
   .navbar1 a:hover {color: greenyellow;}
+  .header {
+    background: transparent;
+  }
+  
   
   
 
