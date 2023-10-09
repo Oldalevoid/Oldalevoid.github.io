@@ -1,0 +1,654 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --coloreprimariobackground: #081b29;
+  --coloresecondariobackground: #112e42;
+  --coloretesto: #ededed;
+  --coloretestonav: #081b29;
+  --coloreprincipale: #00abf0;
+}
+
+html {
+  font-size: 60%;
+  overflow-x: hidden; /* Nasconde il contenuto orizzontalmente se sfora l'elemento */
+}
+
+.page {
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: var(--coloreprimariobackground);
+  color: var(--coloretesto);
+}
+
+.header {
+  position: fixed;
+  top: 0; /* top: La proprietà top viene utilizzata in combinazione con position: fixed; o position: absolute; per posizionare un elemento rispetto al suo contenitore posizionato o rispetto alla finestra del browser. */
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(22, 25, 131, 1) 32%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  /*padding: 2rem 9%; significa che l'elemento avrà un padding di:
+
+  2 rem (unità di misura basata sulla dimensione del testo) per il lato superiore e inferiore.
+  9% della larghezza dell'elemento per i lati destro e sinistro. */
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: var(--coloretesto);
+  font-weight: 600;
+}
+
+.navbar a {
+  font-size: 2rem; /* 16 pixel (dimensione di base) * 0.60 (impostato su <html>) * 2.3 (impostato su <header>) = 22.08 pixel
+ */
+  color: var(--coloretesto);
+  font-weight: 500;
+  margin-left: 3rem;
+  transition: 0.3s; /*effetto visivo di latenza  */
+}
+
+a:hover {
+  color: yellowgreen;
+}
+a:active {
+  color: lightblue;
+}
+
+.dropbtn {
+  background: transparent;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+
+.dropdown-content a {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid white;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  min-width: 40%;
+  flex-direction: column;
+  justify-content: center;
+  left: 60%;
+  border: 1px white solid;
+  padding-top: 1rem;
+  top: 8rem;
+  background-image: url(img/wallpaperflare.com_wallpaper.jpg);
+  padding-right: 1rem;
+  border-radius: 10%;
+  
+}
+
+
+section {
+  min-height: 80vh;
+  width: 100%;
+  padding: 5%;
+  /* border: 1px white solid;*/
+  display: flex;
+  background-image: url(img/wallpaperflare.com_wallpaper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home {
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-content {
+
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  /* border: 1px white solid; */
+}
+.home1 {
+    flex-direction: column;
+    width:100%;
+    background-image: url(/img/wallpaperflare.com_wallpaper\ copia.jpg);
+    min-height:100vh
+    
+ }
+  
+.home-content1 {
+    border-top: 1px white solid;
+    border-width: 80%;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+   
+   
+    
+   
+    /* border: 1px white solid; */
+  }
+
+.home-content1 h1{
+    text-align:center;
+    margin-top: 30%;
+    font-size: 4rem;
+    margin-bottom: 3%;
+}
+.home-content1 p {
+    text-align:justify;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+.home-content2 {
+    display:flex;
+    flex-direction:column;
+    width: 100%;
+}
+.home-content2 h1 { text-align: center;
+font-size: 4rem;
+margin-bottom: 2rem;}
+
+.programming {
+    
+    
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10%;
+    margin-bottom: 3%;
+    
+}
+.programmingskills {
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    width:100%;
+    font-size: 2rem;
+    padding: 5%;
+}
+.programmingskills p {
+    margin-top: 1%;
+}
+
+.programming h2 {
+    font-size: 3rem;
+    margin-top: 2%;
+}
+
+#html {
+    border-bottom: 1rem white solid;
+    
+    width: 80%;
+    
+}
+
+#css {border-bottom: 1rem white solid;
+    
+width: 80%;}
+
+#bootstrap {
+    border-bottom: 1rem white solid;
+    width:70%;
+}
+
+#SAAS {
+    border-bottom: 1rem white solid;
+    width: 50%;
+}
+
+.languages {
+    
+    
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 10%;
+    
+    
+}
+
+.languagesskills {
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    width:100%;
+    font-size: 2rem;
+    padding: 5%;
+}
+
+.languagesskills h2 {
+    border-bottom: 1px white solid;
+    margin-bottom: 1%;
+}
+
+
+.languagesskills p {
+    margin-top: 1%;
+}
+.linguainglese {
+    width: 100%;
+}
+
+
+.languages h2 {
+    font-size: 3rem;
+    margin-top: 2%;
+    margin-bottom: -1%;
+}
+
+#reading {
+    margin-top: 4%;
+    border-bottom: 1rem white solid;
+    width: 70%;
+}
+
+#useofenglish {
+    border-bottom: 1rem white solid;
+    width: 70%;
+}
+
+#writing {
+    border-bottom: 1rem white solid;
+    width: 70%;
+    
+}
+
+#listening {
+    border-bottom: 1rem white solid;
+    width: 80%;
+}
+#speaking {
+    border-bottom: 1rem white solid;
+    width: 80%;
+}
+
+.altrelingue {
+    width: 100%;
+}
+.altrelingue h2 {
+    margin-bottom: 3%;
+}
+#spagnolo {
+    border-bottom: 1rem white solid;
+    width: 60%;
+}
+
+#portoghese {
+    border-bottom: 1rem white solid;
+    width: 20%;
+}
+.text {
+  margin-top: 10rem;
+  width: 100%;
+  height: 50%;
+
+  /* border: 1px white solid;*/
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text h1 {
+  color: var(--coloretesto);
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: -30%;
+  margin-bottom: 3%;
+}
+
+.text h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.text p {
+  font-size: 1rem;
+  font-weight: 100;
+  font-style: bold;
+  text-align: justify;
+  max-width: 60%;
+}
+
+.mypic {
+  /* border: 1px solid red; */
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10%;
+}
+
+.pic {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+.mypic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.curriculum {
+  padding: 0%;
+  background-image: url(img/wallpaperflare.com_wallpaper\ copia.jpg);
+  min-height: 30vh;
+}
+.curriculum-content {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+  border: 1px white solid;
+}
+
+.header-curriculum {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 7%;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.box1 {
+  margin-top: 3rem;
+  border-bottom: 1px white solid;
+  width: 80%;
+  margin-left: 20%;
+  padding: 5px;
+}
+
+.box1 h1 {
+    font-size: 3rem;
+}
+.box1 h3 {
+    font-size: 2rem;
+}
+.box1 p {
+    font-size: 1.5rem;
+}
+
+.box2 {
+  margin-top: 2rem;
+  border-bottom: 1px white solid;
+  width: 80%;
+  padding: 5px;
+}
+.box2 h1 {
+    font-size: 3rem;
+}
+.box2 h3 {
+    font-size: 2rem;
+}
+.box2 p {
+    font-size: 1.5rem;
+}
+
+
+.box3 {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  border-bottom: 1px white solid;
+  width: 80%;
+  margin-left: 20%;
+  padding: 5px;
+}
+
+.box3 h1 {
+    font-size: 3rem;
+}
+.box3 h3 {
+    font-size: 2rem;
+}
+.box3 p {
+    font-size: 1.5rem;
+}
+
+.licenzecertificazioni {
+  padding: 0%;
+}
+
+.contenutolicenze {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 7%;
+}
+.headerlicenze {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 7%;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.dpo {
+  margin-top: 2rem;
+  width: 100%;
+  height: 40%;
+}
+.dpo h3 {
+  font-size: 2rem;
+}
+
+.dpoimgcontainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-left: 1px white solid;
+  border-right: 1px white solid;
+}
+
+.dpoimgcontainer img {
+  width: 80%;
+}
+
+.dpoimgcontainer h3 {
+  margin-top: 1rem;
+}
+
+.b2 {
+  margin-top: 2rem;
+  width: 100%;
+  height: 40%;
+}
+.b2 h3 {
+  font-size: 2rem;
+}
+
+.b2container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-left: 1px white solid;
+  border-right: 1px white solid;
+  margin-bottom: 5rem;
+}
+
+.b2container img {
+  width: 80%;
+}
+
+.b2container h3 {
+  margin-top: 1rem;
+}
+
+.footer {
+  width: 100%;
+  min-height: 20vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+
+  background-image: none;
+  background-color: black;
+  padding: 0%;
+  border-top: 1px solid white;
+}
+
+.social {
+  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+}
+
+#link {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  border-radius: 20%;
+}
+
+#insta {
+  border-radius: 20%;
+}
+
+#git {border-radius: 20%;
+margin-left: 3rem;}
+
+.navbar1 {display:none}
+
+.navbar1 a {font-size: 2rem; /* 16 pixel (dimensione di base) * 0.60 (impostato su <html>) * 2.3 (impostato su <header>) = 22.08 pixel
+ */
+  color: var(--coloretesto);
+  font-weight: 500;
+  margin-left: 3rem;
+  transition: 0.3s; /*effetto visivo di latenza  */}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Aggiungi qui i tuoi stili per tablet */
+  section {
+    padding: 0%;
+  }
+  .home-content {
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .dropdown {display: none;}
+  .navbar1 {display: inline-block;}
+  .navbar1 a:hover {color: greenyellow;}
+  
+  
+
+  .text {
+    width: 100%;
+    margin-top: 0;
+  }
+  .text h1 {
+    color: var(--coloretesto);
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .text h3 {
+    font-size: 3rem;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .text p {
+    font-size: 2rem;
+    font-weight: 100;
+    font-style: bold;
+    text-align: justify;
+    max-width: 100%;
+  }
+  .mypic {
+    margin-top: 10%;
+  }
+  .pic {
+    width: 80%;
+    height: 100%;
+    padding: 3rem;
+    margin-top: -1rem;
+    border-bottom: 1px white solid;
+  }
+  .mypic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  .curriculum-content h1 {
+    font-size: 3rem;
+  }
+  .curriculum-content h3 {
+    font-size: 2rem;
+  }
+  .curriculum-content p {
+    font-size: 1.5rem;
+  }
+}
