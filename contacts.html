@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="page">
+    <div class="page1">
         <!-- header -->
         <header class="header">
           <a href="#" class="logo"> Alessandro - IT Lawyer </a>
@@ -31,25 +31,24 @@
         </header>
 
      <section class="form">
-        <div class="form1">
-            <fieldset>
-                <legend>Your details</legend>
-                <ol>
-                <li>
-                <label for=name>Name</label>
-                <input id=name name=name type=text placeholder="First and last name" required autofocus>
-                </li>
-                <li>
-                <label for=email>Email</label>
-                <input id=email name=email type=email placeholder="example@domain.com" required>
-                </li>
-                <li>
-                <label for=phone>Phone</label>
-                <input id=phone name=phone type=tel placeholder="Eg. +447500000000" required>
-                </li>
-                </ol>
-                </fieldset>
+        <div class="container">
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" >
+    
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" >
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" >
+
+                <label for="text"> Message </label>
+    
+                <button type="submit"> <a href="mailto:alessandrooldani443@gmail.com"> </a> Send me an email</button>
+            </form>
         </div>
+        
+      
 
 
      </section>
