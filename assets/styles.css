@@ -79,6 +79,8 @@ a:active {
   color: lightblue;
 }
 
+
+
 .dropbtn {
   background: transparent;
   color: white;
@@ -141,7 +143,7 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 10%;
+  margin-top: 15%;
   /* border: 1px white solid; */
 }
 .home1 {
@@ -566,13 +568,15 @@ margin-left: 3rem;}
   margin-left: 3rem;
   transition: 0.3s; /*effetto visivo di latenza  */}
 
+/*big smartphones*/
 @media screen and (min-width: 500px) and (max-width: 689px) {
 .text h1 {margin-top: -50px;}
-}
 .pic img {margin-top: 20%;
-margin-bottom: 0%;}
+  margin-bottom: 0%;}
+}
 
-@media screen and (min-width: 690px) and (max-width: 1024px) {
+/*tablet*/
+@media screen and (min-width: 690px) and (max-width: 850px) {
   /* Aggiungi qui i tuoi stili per tablet */
   section {
     padding: 0%;
@@ -585,8 +589,6 @@ margin-bottom: 0%;}
     justify-content: space-around;
   }
   
-  
-
   .dropdown {display: none;}
   .navbar1 {display: inline-block;}
   .navbar1 a:hover {color: greenyellow;}
@@ -671,7 +673,119 @@ margin-bottom: 0%;}
   .home-content2 
   {width: 80%;
   margin: 0 auto;
-margin-bottom: 3%;}
+  margin-bottom: 3%;
+  margin-top: 9rem;}
+
+  .curriculum-content h1 {
+    font-size: 3rem;
+  }
+  .curriculum-content h3 {
+    font-size: 2rem;
+  }
+  .curriculum-content p {
+    font-size: 1.5rem;
+  }
+}
+/*reversed big smartphone screen */
+@media screen and (min-width: 851px) and (max-width: 1023px) {
+  /* Aggiungi qui i tuoi stili per tablet */
+  section {
+    padding: 0%;
+  }
+  .home-content {
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .dropdown {display: none;}
+  .navbar1 {display: inline-block;}
+  .navbar1 a:hover {color: greenyellow;}
+  .header {
+    background: transparent;
+  }
+
+  .header a {
+    font-size: 2.4rem;
+  }
+  
+  .mypic {
+    
+    margin-bottom: 10rem;
+  }
+  .pic img {margin-top: -4rem;}
+  
+
+  .text {
+    width: 100%;
+    margin-top: 0;
+  
+    
+  }
+  .text h1 {
+    color: var(--coloretesto);
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: -7rem;
+   
+  }
+  .text h3 {
+    font-size: 3rem;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .text p {
+    font-size: 2rem;
+    font-weight: 100;
+    font-style: bold;
+    text-align: justify;
+    max-width: 100%;
+  }
+  .text img {
+    width: 100%;
+  }
+  .mypic {
+    margin-top: 10%;
+  }
+  .pic {
+    width: 75%;
+    height: 100%;
+    padding: 3rem;
+    margin-top: -6rem;
+    border-bottom: 1px white solid;
+  }
+  .mypic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  /* home-content1 - chi sono  */
+  .home-content1 {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: -20%;
+    
+  }
+  .home-content1 h1 {
+    margin-top: 5%;
+  }
+  .home-content1 p {
+    width: 70%;
+  }
+
+  /*home-content2 - sezione skills */
+  .home-content2 
+  {width: 80%;
+  margin: 0 auto; 
+  margin-bottom: 3%; 
+  margin-top: 20rem;}
 
   .curriculum-content h1 {
     font-size: 3rem;
@@ -684,7 +798,11 @@ margin-bottom: 3%;}
   }
 }
 
+
+
+/*desktop*/
 @media screen  and (min-width: 1024px) {
+  
 
   .home-content {
     min-height: 100vh;
