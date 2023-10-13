@@ -1,18 +1,58 @@
+.form1 {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  min-height: 100vh;
+}
+
+.form1 h2 {
+  margin-top: 30%;
+  font-size: 5rem;
+  margin-bottom: -5rem;
+}
+
+form h3 {
+  margin-top: 2rem;
+  font-style: italic;
+  text-align: justify;
+  margin: 2 auto;
+  
+}
 
 
 
+.contact-form {
+  width:100%;
+  display: flex;
+  flex-direction: column;
+}
+.form-group {
+  margin-bottom: 15px;
+  width:100%
+}
+.form-group:last-of-type {
+  margin-bottom: 4rem;
+}
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
+label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize:vertical;
+}
+
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
@@ -38,30 +78,28 @@ input[type=text], select, textarea {
     padding: 20px;
     border: 1px solid white;
     margin-top: 30%;
+    width:100%;
+    min-height: 50vh;
     display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
   }
 
+  @media screen and (max-width: 280px) {
+    .form1 h2 {
+      margin-top: 12rem;
+    }
+
+  }
+
+
   @media screen and (min-width: 690px) and (max-width: 1024px) {
-    .form1 {
-      display: flex;
-      flex-direction: column;
-      width:100%;
-      min-height: 80vh;
-      }
-
-    .container1 {margin-top: 20%;}
-
+    
    
 
   }
 
   @media screen  and (min-width: 1024px){
-    .form1 {
-      display:flex;
-      justify-content: center;
-      align-items:center;
-      border: 1px solid white;
-      margin-top: -21%;
-    }
-
+   
   }

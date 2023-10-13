@@ -32,32 +32,55 @@
           
         </header>
 
-      <section class ="form1">
-      <div class="container1">
-        <form  action="mailto:alessandrooldani443@gmail.com" method="post" enctype="application/x-www-form-urlencoded" autocomplete="off"> 
-      
-          <label for="fname"> Nome o Ragione Sociale </label>
-          <input type="text" id="fname" name="Nome" placeholder="Nome o ragione sociale" required>
-
-          
-      
-          <label for="lname"> Cognome </label>
-          <input type="text" id="lname" name="Cognome" placeholder="Cognome">
-          
-          <label for="email"> Email </label>
-          <input type="text" id="email"  name="Email" placeholder="Email">
-      
-      
-          <label for="subject"> Messaggio </label>
-          <textarea id="subject" name="Messaggio" placeholder="Write something.." style="height:200px" required ></textarea>
-      
-          <input type="submit" value="Send">
-          
-      
-        </form>
-      </div>
+      <section class="form1">
+        <h2> Contattami </h2>
         
+        <div class="container1">
+          
+          <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                  <label for="name">Nome | Ragione Sociale </label>
+                  <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                  <label for="surname">Cognome</label>
+                  <input type="text" id="surname" name="surname" >
+              </div>
+              <div class="form-group">
+                  <label for="message">Messaggio</label>
+                  <textarea id="message" name="message" required></textarea>
+              </div>
+              <input type="submit"> </button>
+
+              <h3> Article 2 (2) (c) of the General Data Protection Regulation (GDPR) states that it does not apply to the processing of personal data “by a natural person in the course of a purely personal or household activity”.</h3>
+          </form>
+        </div>
+        
+      </section>
+
+  <script> 
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+          
+              var name = document.getElementById('name').value;
+              var surname = document.getElementById('surname').value;
+              var message = document.getElementById('message').value;
+          
+              var subject = 'Nuovo Messaggio da ' + name + ' ' + surname;
+              var body = 'Messaggio: ' + message;
+          
+              var mailtoLink = 'mailto:alessandrooldani443@gmail.com' +
+                  '?subject=' + encodeURIComponent(subject) +
+                  '&body=' + encodeURIComponent(body);
+          
+              window.location.href = mailtoLink;
+          });
+
+      </script>
+          
      </section>
+
+     
     
 
 
