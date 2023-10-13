@@ -7,31 +7,41 @@
     <link rel="stylesheet" href="assets/stylesContact.css"/>
     <title> The IT-Lawyer - Contatti </title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init("JquH9O0OQRVgq_qUI");
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
+<script type="text/javascript">
+    (function() {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("JquH9O0OQRVgq_qUI");
+    })();
 
-      </script>
-          
+    window.onload = function() {
+        var form = document.getElementById("contact-form");
+        var successMessage = document.getElementById("success-message");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            // these IDs from the previous steps
+            emailjs.sendForm("service_apyh30g", "template_n6ggnj9", this)
+                .then(function() {
+                    console.log("SUCCESS!");
+                    successMessage.innerHTML = "Email sent correctly!";
+                    successMessage.style.color = "green";
+                    successMessage.style.display = "block"; // Show the success message
+                    // You can also reset the form here if needed: form.reset();
+                    setTimeout(function() {
+                        successMessage.style.display = "none"; // Hide the success message after 5 seconds
+                    }, 3000);
+                }, function(error) {
+                    console.log("FAILED...", error);
+                    successMessage.innerHTML = "Failed to send email.";
+                    successMessage.style.color = "red";
+                    successMessage.style.display = "block"; // Show the error message
+                });
+        });
+    }
+</script>
+</script>
+       
 </head>
 <body>
     <div class="page1">
@@ -73,18 +83,24 @@
                   <input type="text" id="name" name="name" required>
               </div>
               <div class="form-group">
-                  <label for="email">Email </label>
+                  <label for="email"> Email </label>
                   <input type="text" id="surname" name="email" required >
               </div>
               <div class="form-group">
                   <label for="message">Messaggio</label>
                   <textarea id="message" name="message" required></textarea>
               </div>
-              <input type="submit"> </button>
+              <input type="submit" value="Send"> </button>
 
               <h3> Article 2 (2) (c) of the General Data Protection Regulation (GDPR) states that it does not apply to the processing of personal data “by a natural person in the course of a purely personal or household activity”.</h3>
           </form>
         </div>
+
+        <div id="success-message">
+          <h1> Email Sent! </h1>
+        </div>
+
+
         
       </section>
 
