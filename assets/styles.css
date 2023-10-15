@@ -263,7 +263,7 @@ width: 80%;}
 .languagesskills p {
     margin-top: 1%;
 }
-.linguainglese {
+.english {
     width: 100%;
 }
 
@@ -299,18 +299,18 @@ width: 80%;}
     width: 80%;
 }
 
-.altrelingue {
+.other-languages {
     width: 100%;
 }
-.altrelingue h2 {
+.other-languages h2 {
     margin-bottom: 3%;
 }
-#spagnolo {
+#spanish {
     border-bottom: 1rem white solid;
     width: 60%;
 }
 
-#portoghese {
+#portughese {
     border-bottom: 1rem white solid;
     width: 20%;
 }
