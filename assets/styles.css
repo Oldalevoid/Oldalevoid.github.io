@@ -447,17 +447,17 @@ width: 80%;}
     font-size: 1.5rem;
 }
 
-.licenzecertificazioni {
+.certifications {
   padding: 0%;
 }
 
-.contenutolicenze {
+.certifications-content {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 7%;
 }
-.headerlicenze {
+.certifications-header {
   padding-top: 2rem;
   display: flex;
   justify-content: center;
