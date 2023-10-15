@@ -100,11 +100,11 @@ a:active {
   position: relative;
   user-select: none;
   visibility: visible;
-  color:antiquewhite
+  background: transparent;
 }
 
 .navicon {
-  background: #333;
+  background: white;
   display: block;
   height: 2px;
   width: 20px;
@@ -121,7 +121,7 @@ a:active {
 
 .navicon:before,
 .navicon:after {
-  background: #333;
+  background: white;
   display: block;
   width: 100%;
   height: 100%;
@@ -270,6 +270,7 @@ margin-bottom: 2rem;}
 }
 .programmingskills p {
     margin-top: 1%;
+    margin-bottom: 5%;
 }
 
 .programming h2 {
@@ -319,11 +320,15 @@ width: 80%;}
 .languagesskills h2 {
     border-bottom: 1px white solid;
     margin-bottom: 1%;
+    width:100%;
+    padding-bottom: 10px;
+    
 }
 
 
 .languagesskills p {
     margin-top: 1%;
+    margin-bottom: 5%;
 }
 .english {
     width: 100%;
@@ -340,25 +345,30 @@ width: 80%;}
     margin-top: 4%;
     border-bottom: 1rem white solid;
     width: 70%;
+    padding-bottom: 3px;
 }
 
 #useofenglish {
     border-bottom: 1rem white solid;
     width: 70%;
+    padding-bottom: 2px;
 }
 
 #writing {
     border-bottom: 1rem white solid;
     width: 70%;   
+    padding-bottom: 3px;
 }
 
 #listening {
     border-bottom: 1rem white solid;
     width: 80%;
+    padding-bottom: 3px;
 }
 #speaking {
     border-bottom: 1rem white solid;
     width: 80%;
+    padding-bottom: 3px;
 }
 
 .other-languages {
@@ -372,7 +382,7 @@ width: 80%;}
     width: 60%;
 }
 
-#portughese {
+#portuguese {
     border-bottom: 1rem white solid;
     width: 20%;
 }
