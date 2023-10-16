@@ -908,6 +908,7 @@ margin-left: 3rem;}
 /*desktop*/
 @media screen  and (min-width: 1024px) {
   
+  .home {background-image: url(img/wallpaperflare.com_wallpaper\ copia.jpg);}
 
   .home-content {
     min-height: 100vh;
@@ -927,8 +928,7 @@ margin-left: 3rem;}
 
   /* home-content1 - chi sono  */
 
-  .home1 {background-image: url(img/wallpaperflare.com_wallpaper\ copia\ 2.jpg);
-  }
+  
   .home-content1 {
     width: 100%;
     margin: 0 auto;
