@@ -926,9 +926,13 @@ margin-left: 3rem;}
   }
 
   /* home-content1 - chi sono  */
+
+  .home1 {background-image: url(img/wallpaperflare.com_wallpaper\ copia\ 2.jpg);
+  }
   .home-content1 {
     width: 100%;
     margin: 0 auto;
+    ;
    
     
   }
@@ -948,9 +952,17 @@ margin-left: 3rem;}
   .home-content2 h2 {
     margin-bottom: 4rem;
   }
+.curriculum {background-color: #000000;
+background-image: url(none);}
+ .curriculum-content { background-image: url(img/wallpaperflare.com_wallpaper\ copia\ 2.jpg);
+background-size: cover;
+background-position: 100%;}
+}
 
+
+ 
   
  
  
 
-}
+
